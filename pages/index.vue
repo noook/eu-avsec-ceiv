@@ -1,33 +1,16 @@
 <template>
   <div class="container">
     <div>
-      <Logo />
       <h1 class="title">Hello</h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green">
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey">
-          GitHub
-        </a>
-      </div>
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from '@vue/composition-api';
+import { defineComponent } from '@nuxtjs/composition-api';
 
 export default defineComponent({
-  name: 'Index',
+  name: 'Home',
 });
 </script>
 

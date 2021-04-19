@@ -25,6 +25,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '@/assets/icons/style.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -44,7 +45,24 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    'nuxt-i18n',
   ],
+
+  i18n: {
+    locales: [
+      {
+        code: 'en', iso: 'en-US', file: 'en.ts',
+      },
+      {
+        code: 'fr', iso: 'fr-FR', file: 'fr.ts',
+      },
+    ],
+    defaultLocale: 'en',
+    langDir: '~/locales/',
+    strategy: 'prefix_except_default',
+    seo: true,
+    parsePages: false,
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
