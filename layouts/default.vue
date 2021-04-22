@@ -12,7 +12,9 @@ export default defineComponent({
 <template>
   <div id="app">
     <Navbar />
-    <Nuxt id="nuxt" />
+    <div class="flex justify-center">
+      <Nuxt id="nuxt" />
+    </div>
   </div>
 </template>
 
@@ -41,7 +43,8 @@ html {
 }
 
 #nuxt {
-  @apply mt-14;
+  @apply mt-14 bg-gray-50;
+  max-width: 1000px;
 }
 
 *,

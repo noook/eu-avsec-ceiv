@@ -25,6 +25,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '@/assets/main.scss',
     '@/assets/icons/style.css',
   ],
 
@@ -41,6 +42,7 @@ export default {
     '@nuxt/typescript-build',
     'nuxt-windicss',
     '@nuxtjs/composition-api/module',
+    '@nuxtjs/google-fonts',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -64,7 +66,18 @@ export default {
     parsePages: false,
   },
 
+  googleFonts: {
+    families: {
+      Quicksand: [300, 400, 500, 600, 700],
+    },
+    display: 'swap',
+  },
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+
+  server: {
+    host: '0', // default: localhost
   },
 };

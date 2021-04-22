@@ -1,10 +1,9 @@
 <script lang="ts">
 import { defineComponent, ref } from '@nuxtjs/composition-api';
-import { LocaleKeys } from '@/locales';
 
 interface LinkItem {
   name: string;
-  text: keyof LocaleKeys;
+  text: string;
 }
 
 export default defineComponent({
