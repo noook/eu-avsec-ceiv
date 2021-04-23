@@ -55,9 +55,9 @@ export default defineComponent({
         </i18n>
         <h3>{{ $t('homepage.regulationImplementation') }}</h3>
         <i18n path="homepage.p1.text" tag="p">
-          <a class="underline text-blue-900" target="_blank" href="https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:02015R1998-20160229&rid=1">2015/1998</a>
+          <a target="_blank" rel="noopener" href="https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:02015R1998-20160229&rid=1">2015/1998</a>
           <strong>{{ $t('homepage.p1.date') }}</strong>
-          <span class="text-red-500 italic">{{ $t('homepage.p1.effectiveDate') }}</span>
+          <span class="text-red-600 italic">{{ $t('homepage.p1.effectiveDate') }}</span>
         </i18n>
         <hr>
         <i18n path="homepage.p2.text" tag="p">
@@ -73,8 +73,8 @@ export default defineComponent({
           {{ $t('homepage.areYouReady') }}
         </p>
         <figure>
-          <a target="_blank" href="https://docs.google.com/a/eu-avsec-ceiv.org/viewer?a=v&pid=sites&srcid=ZXUtYXZzZWMtY2Vpdi5vcmd8ZXUtYXZzZWMtY2Vpdi1vcmd8Z3g6NTQwNjdlN2IwZmFhNTgyMg">
-            <figcaption>{{ $t('homepage.viewPresentation') }}</figcaption>
+          <a target="_blank" rel="noopener" href="https://docs.google.com/a/eu-avsec-ceiv.org/viewer?a=v&pid=sites&srcid=ZXUtYXZzZWMtY2Vpdi5vcmd8ZXUtYXZzZWMtY2Vpdi1vcmd8Z3g6NTQwNjdlN2IwZmFhNTgyMg">
+            <span>{{ $t('homepage.viewPresentation') }}</span>
             <img src="https://sites.google.com/a/eu-avsec-ceiv.org/eu-avsec-ceiv-org/_/rsrc/1381403981328/home/ACC3-RA3-KC3%20website%20pres%20176x99.jpg" alt="">
           </a>
         </figure>
@@ -157,7 +157,7 @@ export default defineComponent({
   figure a {
     @apply flex items-center justify-center text-center;
 
-    figcaption {
+    span {
       @apply text-lg font-bold mr-4;
     }
   }

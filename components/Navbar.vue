@@ -58,12 +58,14 @@ export default defineComponent({
   <nav>
     <div class="mobile">
       <div class="bar">
-        <button @click="showOverlay = true"><i class="icon-menu" /></button>
+        <button aria-label="Open menu" @click="showOverlay = true"><i class="icon-menu" /></button>
       </div>
       <transition name="fade">
         <div v-if="showOverlay" class="overlay">
           <div class="actions">
-            <button @click="showOverlay = false"><i class="icon-cross" /></button>
+            <button aria-label="Close menu" @click="showOverlay = false">
+              <i class="icon-cross" />
+            </button>
           </div>
           <ul>
             <li v-for="link in links" :key="link.name" @click="showOverlay = false">
