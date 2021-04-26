@@ -8,6 +8,14 @@ export default {
   contact: 'Contact',
   linksAndRegulations: 'Liens et réglementations',
   or: 'ou',
+  readMore: 'lire plus',
+
+  spokenLanguages: 'Langues',
+  languages: {
+    fr: 'Français',
+    en: 'Anglais',
+    it: 'Italien',
+  },
 
   homepage: {
     welcome: 'Bienvenue à l\'association Internationale des Validateurs UE de sûreté aérienne',
@@ -50,4 +58,6 @@ export default {
     objectivity: 'Objectivité',
     objectivityText: 'Nous nous attachons à évaluer objectivement, en s\'appuyant sur des éléments probants recueillis et analysés.',
   },
+
+  meetOurTeam: 'Faites connaissance avec notre équipe de Validateurs UE de Sûreté Aérienne:',
 } as const;

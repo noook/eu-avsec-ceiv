@@ -10,6 +10,13 @@ export default {
   or: 'or',
   readMore: 'read more',
 
+  spokenLanguages: 'Languages',
+  languages: {
+    fr: 'French',
+    en: 'English',
+    it: 'Italian',
+  },
+
   homepage: {
     welcome: 'Welcome to the EU Aviation Security Center of Excellence Independent Validators Association',
     target: 'This website is exclusively dedicated for customers, who need {0} validations and/or pre-validations in accordance with:',
@@ -51,4 +58,6 @@ export default {
     objectivity: 'Objectivity',
     objectivityText: 'We strive to evaluate fairly, based on collected evidence.',
   },
+
+  meetOurTeam: 'Meet our team of EU Aviation Security Validators:',
 } as const;

@@ -14,7 +14,9 @@ module.exports = {
   // add your custom rules here
   rules: {
     'import/no-extraneous-dependencies': 'off',
-    'import/extensions': ['error', 'never', { svg: 'always', json: 'always', png: 'always' }],
+    'import/extensions': ['error', 'never', {
+      svg: 'always', json: 'always', png: 'always', jpg: 'always',
+    }],
     'import/no-unresolved': ['error', { ignore: ['png$', 'jpg$'] }],
     'vue/html-closing-bracket-newline': 'off',
     'vue/singleline-html-element-content-newline': 'off',
@@ -34,6 +36,7 @@ module.exports = {
       node: {
         extensions: ['.js', '.ts', '.png'],
       },
+      typescript: {},
     },
   },
 };
