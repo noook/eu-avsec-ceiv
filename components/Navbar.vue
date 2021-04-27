@@ -24,12 +24,12 @@ export default defineComponent({
         name: 'news',
         text: 'news',
       },
+      {
+        name: 'ACC3',
+        text: 'ACC3',
+      },
       // {
-      //   name: 'acc3',
-      //   text: 'ACC3',
-      // },
-      // {
-      //   name: 'ra3',
+      //   name: 'RA3',
       //   text: 'ACC3',
       // },
       // {

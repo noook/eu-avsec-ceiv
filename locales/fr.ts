@@ -60,4 +60,8 @@ export default {
   },
 
   meetOurTeam: 'Faites connaissance avec notre équipe de Validateurs UE de Sûreté Aérienne:',
+
+  acc3: {
+    title: 'Validation & Pré-validation ACC3',
+  },
 } as const;
