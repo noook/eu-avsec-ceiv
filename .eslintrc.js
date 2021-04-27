@@ -22,6 +22,7 @@ module.exports = {
     'vue/singleline-html-element-content-newline': 'off',
     '@typescript-eslint/no-unused-vars': ['error'],
     'no-undef': 'off',
+    'max-len': 'off',
   },
   overrides: [
     {

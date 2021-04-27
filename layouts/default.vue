@@ -43,7 +43,7 @@ html {
 }
 
 #nuxt {
-  @apply mt-14 bg-gray-50;
+  @apply mt-14 bg-gray-50 w-full;
   max-width: 1000px;
 }
 

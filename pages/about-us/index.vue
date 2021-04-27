@@ -6,8 +6,8 @@ export default defineComponent({
   name: 'AboutUs',
   nuxtI18n: {
     paths: {
-      fr: '/notre-equipe',
       en: '/about-us',
+      fr: '/notre-equipe',
     },
   },
   setup() {

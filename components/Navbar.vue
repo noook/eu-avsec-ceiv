@@ -20,10 +20,10 @@ export default defineComponent({
         name: '/about-us',
         text: 'aboutUs',
       },
-      // {
-      //   name: 'news',
-      //   text: 'news',
-      // },
+      {
+        name: 'news',
+        text: 'news',
+      },
       // {
       //   name: 'acc3',
       //   text: 'ACC3',

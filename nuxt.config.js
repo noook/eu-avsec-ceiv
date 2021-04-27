@@ -63,7 +63,6 @@ export default {
     langDir: '~/locales/',
     strategy: 'prefix_except_default',
     seo: true,
-    parsePages: false,
   },
 
   googleFonts: {
