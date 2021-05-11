@@ -20,7 +20,7 @@ export default {
   homepage: {
     welcome: 'Bienvenue à l\'association Internationale des Validateurs UE de sûreté aérienne',
     target: 'Ce site est exclusivement dédié aux clients qui ont recours aux validations  et/ou pré-validations {0} conformément au:',
-    regulationImplementation: 'RÈGLEMENT D’EXÉCUTION (UE)',
+    regulationImplementation: 'RÈGLEMENT D\'EXÉCUTION (UE)',
     p1: {
       date: '05 Nov 2015',
       effectiveDate: '(applicable le 1er février 2016)',
@@ -32,7 +32,7 @@ export default {
       accent: 'désignées ACC3',
     },
     p3: {
-      text: 'Les entités de pays tiers ont aussi la possibilité de faire partie de la chaîne d’approvisionnement sécurisée d’un ACC3 en demandant à être désignées comme {0} et {1} d’un pays tiers titulaire d’une validation UE de sûreté aérienne.',
+      text: 'Les entités de pays tiers ont aussi la possibilité de faire partie de la chaîne d\'approvisionnement sécurisée d\'un ACC3 en demandant à être désignées comme {0} et {1} d\'un pays tiers titulaire d\'une validation UE de sûreté aérienne.',
       ra3: 'RA3 (agent habilité)',
       kc3: 'KC3 (chargeur connu)',
     },
@@ -43,7 +43,7 @@ export default {
     aviationSafetyEvolves: 'La sûreté de l\'aviation évolue',
     areYouReady: 'Êtes-vous prêts ?',
     ourMission: 'Notre mission',
-    ourMissionText: 'Fournir aux opérateurs de Fret aérien et de Poste aérienne ainsi qu\'à tous les acteurs de la chaine d’approvisionnement sécurisée une plateforme qui leur permette de trouver les ressources, l\'expertise et le conseil afin de pouvoir être validés et désignés ACC3, RA3 et KC3.',
+    ourMissionText: 'Fournir aux opérateurs de Fret aérien et de Poste aérienne ainsi qu\'à tous les acteurs de la chaine d\'approvisionnement sécurisée une plateforme qui leur permette de trouver les ressources, l\'expertise et le conseil afin de pouvoir être validés et désignés ACC3, RA3 et KC3.',
     ourVision: 'Notre vision',
     ourVisionText: 'Être un acteur majeur dans les services de validations UE de sûreté aérienne à travers le monde.',
     ourValues: 'Nos valeurs',
@@ -63,5 +63,11 @@ export default {
 
   acc3: {
     title: 'Validation & Pré-validation ACC3',
+    regulationRequirements: 'Quelles sont les exigences réglementaires de l\'UE?',
+    p1: 'Règlement(CE) {0} du Parlement Européen et du Conseil du 11 Mars 2008 relatif à l\'instauration de règles communes dans le domaine de la sûreté de l\'aviation civile précise que chaque transporteur aérien mettant en œuvre des normes de sûreté de l\'aviation devrait {1}',
+    p1Keywords: 'établir, appliquer et maintenir un programme de sûreté.',
+    p2: '{1}, fixant les dispositions relatives au fret et au courrier au départ d\'un pays tiers fut ajouté dans le règlement d\'exécution (UE) No {0} du 25 Août 2011. Ces dispositions précisent, entres autres, les éléments qui doivent figurer dans le programme de sûreté du transporteur aérien.',
+    p3: 'Règlement d\'exécution (UE) {0} du 9 Novembre 2012 modifiant le règlement (UE) No {1} en ce qui concerne la {2}',
+    p3Keywords: 'validation UE de sûreté aérienne',
   },
 } as const;
