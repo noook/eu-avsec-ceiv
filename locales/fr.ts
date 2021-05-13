@@ -21,7 +21,7 @@ export default {
 
   homepage: {
     welcome: 'Bienvenue à l\'association Internationale des Validateurs UE de sûreté aérienne',
-    target: 'Ce site est exclusivement dédié aux clients qui ont recours aux validations  et/ou pré-validations {0} conformément au:',
+    target: 'Ce site est exclusivement dédié aux clients qui ont recours aux validations et/ou pré-validations {0} conformément au:',
     regulationImplementation: 'RÈGLEMENT D\'EXÉCUTION (UE)',
     p1: {
       date: '05 Nov 2015',
@@ -83,7 +83,7 @@ export default {
     prevalidation: {
       '3steps': 'La pré-validation ACC3 est un processus d\'évaluation documentaire en 3 étapes:',
       step1: 'Étude approfondie du programme de sûreté du transporteur aérien, qui est la pierre angulaire de tout le processus de validation.',
-      step2: 'Étude approfondie de tous les documents en relation avec ce programme  de sûreté.',
+      step2: 'Étude approfondie de tous les documents en relation avec ce programme de sûreté.',
       step3: 'Nous complétons la liste de contrôle pour la validation des ACC3 avec toutes les informations recueillies.',
     },
     takeOurSurvey: 'Vous pouvez utiliser notre {0} afin d\'évaluer votre niveau de préparation et de conformité avec les exigences des règlements UE.',
@@ -93,6 +93,35 @@ export default {
       step1: 'Évaluation de la pré-validation qui est une étape indispensable du processus de la validation. Cette étape doit être concluante avant que le validateur ne puisse procéder à la validation sur site.',
       step2: 'Le validateur évalue sur site l\'effectivité et l\'efficacité des mesures de sûreté du transporteur aérien. Il met ensuite à disposition de l\'autorité compétente du pays membre qui administre le transporteur aérien son rapport de validation ACC3',
       step3: 'L\'autorité compétente, décide de désigner ACC3 le transporteur aérien, en fonction du rapport de validation UE de sûreté aérienne, qui atteste de la mise en place des mesures de sûreté, en conformité avec les exigences de la réglementation UE.',
+    },
+  },
+  ra3: {
+    title: 'Validation & Pré-validation RA3',
+    regulationRequirements: 'Quelles sont les exigences réglementaires de l\'UE?',
+    p1: 'Règlement(CE) {0} du Parlement Européen et du Conseil du 11 Mars 2008 relatif à l\'instauration de règles communes dans le domaine de la sûreté de l\'aviation civile précise que chaque entité mettant en œuvre des normes de sûreté de l\'aviation devrait {1}',
+    p1Keywords: 'établir, appliquer et maintenir un programme de sûreté.',
+    p2: 'Règlement d\'exécution (UE) {0} du 10 Juillet 2013 modifiant le règlement (UE) {1} en ce qui concerne la {1}',
+    p2Keywords: 'validation UE de sûreté aérienne.',
+    footer: 'Le 05 Nov 2015, le Règlement (UE) N° 185/2010 a été abrogé par le Règlement d’exécution {0} applicable le 01 Fev 2016',
+    footerLink: '(UE) 2015/1998',
+    keys: 'Quatre éléments clés pour une validation RA réussie',
+    whatWeOffer: 'Ce que nous proposons:',
+    prevalidationPrehamble: 'Nous offrons aux Agents habilités la possibilité d\'organiser une pré-validation RA3 afin qu\'ils puissent évaluer leur niveau de conformité. C\'est une étape clé du processus de validation.',
+    whyPrevalidate: 'Pourquoi pré-valider? ',
+    validationReason: 'C\'est un moyen pratique et économique de mesurer et de définir la portée de la validation RA3, de comprendre et maitriser la réglementation, ses exigences et comment elles sont interprétées, et de rassembler toutes les informations requises, afin d\'être fin prêts pour pouvoir procéder à une validation simple, rapide et sans accrocs.',
+    howWeProceed: 'Comment nous procédons:',
+    prevalidation: {
+      '3steps': 'La pré-validation RA est un processus d\'évaluation documentaire en 3 étapes:',
+      step1: 'Étude approfondie du programme de sûreté de l\'agent habilité ou de ses procédures qui sont la pierre angulaire de tout le processus de validation.',
+      step2: 'Étude approfondie de tous les documents en relation avec ce programme de sûreté ou des procédures.',
+      step3: 'Nous complétons la liste de contrôle pour la validation des RA3 avec toutes les informations recueillies.',
+    },
+    takeOurSurvey: 'Vous pouvez utiliser notre {0} afin d\'évaluer votre niveau de préparation et de conformité avec les exigences des règlements UE.',
+    formText: 'formulaire de pré-validation RA3',
+    validation: {
+      '2steps': 'La validation RA3 est un processus en 2 étapes.',
+      step1: 'Évaluation de la pré-validation qui est une étape indispensable du processus de la validation. Cette étape doit être concluante avant que le validateur ne puisse procéder à la validation sur site.',
+      step2: 'Le validateur évalue sur site l\'effectivité et l\'efficacité des mesures de sûreté de l\'agent habilité. Si la validation est concluante, Il remet alors à disposition de l\'agent habilité son rapport de validation RA3.',
     },
   },
 } as const;

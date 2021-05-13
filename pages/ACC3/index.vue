@@ -173,7 +173,7 @@ export default defineComponent({
     @apply lg:flex;
 
     section {
-      @apply lg:p-4 sm:px-12 lg:px-4;
+      @apply lg:p-4 sm:px-12 lg:px-4 flex-1;
 
       ul li {
         @apply mb-1;

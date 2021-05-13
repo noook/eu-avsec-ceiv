@@ -28,10 +28,10 @@ export default defineComponent({
         name: 'ACC3',
         text: 'ACC3',
       },
-      // {
-      //   name: 'RA3',
-      //   text: 'ACC3',
-      // },
+      {
+        name: 'RA3',
+        text: 'RA3',
+      },
       // {
       //   name: 'kc3',
       //   text: 'KC3',
