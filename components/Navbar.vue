@@ -58,7 +58,14 @@ export default defineComponent({
   <nav>
     <div class="mobile">
       <div class="bar">
-        <button aria-label="Open menu" @click="showOverlay = true"><i class="icon-menu" /></button>
+        <nuxt-link class="text-lg" :to="switchLocalePath($i18n.locale === 'fr' ? 'en' : 'fr')">
+          {{ $i18n.locale === 'fr' ? 'EN' : 'FR' }}
+        </nuxt-link>
+        <span class="mx-6 font-semibold">—</span>
+        <button aria-label="Open menu" @click="showOverlay = true">
+          <span class="mr-2 text-xl">Menu</span>
+          <i class="icon-menu" />
+        </button>
       </div>
       <transition name="fade">
         <div v-if="showOverlay" class="overlay">
@@ -92,7 +99,7 @@ nav {
     @apply h-full px-4 text-2xl;
 
     > button {
-      @apply p-2 focus:outline-none;
+      @apply flex items-center p-2 focus:outline-none;
     }
   }
 

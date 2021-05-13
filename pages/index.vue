@@ -125,7 +125,7 @@ export default defineComponent({
     @apply lg:flex;
 
     section {
-      @apply p-4 sm:px-12 lg:px-4;
+      @apply p-4 sm:px-12 lg:px-4 flex-1;
     }
   }
 
