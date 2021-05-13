@@ -123,7 +123,7 @@ nav {
 }
 
 .fade-enter-active, .fade-leave-active {
-  @apply duration-500;
+  @apply duration-150;
 }
 .fade-enter, .fade-leave-to {
   @apply opacity-0;
