@@ -87,7 +87,11 @@ export default defineComponent({
           <a
             target="_blank"
             rel="noopener"
-            href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02015R1998-20160229&rid=1">{{ $t('ra3.footerLink') }}</a>
+            href="https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2010:055:0001:0055:EN:PDF#:~:text=This%20Regulation%20lays%20down%20detailed,supplementing%20the%20common%20basic%20standards">{{ $t('ra3.footerLink') }}</a>
+          <a
+            target="_blank"
+            rel="noopener"
+            href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02015R1998-20160229&rid=1">{{ $t('ra3.footerLink2') }}</a>
         </i18n>
         <hr class="my-4">
         <h3>{{ $t('ra3.keys') }}</h3>

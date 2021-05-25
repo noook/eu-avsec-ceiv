@@ -32,10 +32,10 @@ export default defineComponent({
         name: 'RA3',
         text: 'RA3',
       },
-      // {
-      //   name: 'kc3',
-      //   text: 'KC3',
-      // },
+      {
+        name: 'KC3',
+        text: 'KC3',
+      },
       // {
       //   name: 'contact',
       //   text: 'contact',
@@ -58,12 +58,10 @@ export default defineComponent({
   <nav>
     <div class="mobile">
       <div class="bar">
-        <nuxt-link class="text-lg" :to="switchLocalePath($i18n.locale === 'fr' ? 'en' : 'fr')">
+        <nuxt-link class="text-lg mr-2" :to="switchLocalePath($i18n.locale === 'fr' ? 'en' : 'fr')">
           {{ $i18n.locale === 'fr' ? 'EN' : 'FR' }}
         </nuxt-link>
-        <span class="mx-6 font-semibold">—</span>
         <button aria-label="Open menu" @click="showOverlay = true">
-          <span class="mr-2 text-xl">Menu</span>
           <i class="icon-menu" />
         </button>
       </div>
