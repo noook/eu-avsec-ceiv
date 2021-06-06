@@ -7,10 +7,28 @@ export default defineComponent({
   setup() {
     return {};
   },
+  // @ts-ignore
   head() {
-    return this.$nuxtI18nHead({
-      addSeoAttributes: true,
-    });
+    const i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true });
+    return {
+      htmlAttrs: {
+        ...i18nHead.htmlAttrs,
+      },
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: `
+            ${this.$i18n.t('homepage.welcome')}
+            ${this.$i18n.t('homepage.target', [`${this.$i18n.t('ACC3')} ${this.$i18n.t('RA3')} ${this.$i18n.t('or')} ${this.$i18n.t('KC3')}`])}
+          `,
+        },
+        ...i18nHead.meta,
+      ],
+      link: [
+        ...i18nHead.link,
+      ],
+    };
   },
 });
 </script>
