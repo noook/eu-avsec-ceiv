@@ -54,7 +54,7 @@ export default {
   i18n: {
     locales: [
       {
-        code: 'en', iso: 'en-US', file: 'en.ts',
+        code: 'en', iso: 'en-US', file: 'en.ts', isCatchallLocale: true,
       },
       {
         code: 'fr', iso: 'fr-FR', file: 'fr.ts',
@@ -64,6 +64,7 @@ export default {
     langDir: '~/locales/',
     strategy: 'prefix_except_default',
     seo: true,
+    baseUrl: 'https://eu-avsec-ceiv.org',
   },
 
   googleFonts: {

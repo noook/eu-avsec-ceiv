@@ -1,6 +1,6 @@
 <script lang="ts">
 import { defineComponent } from '@nuxtjs/composition-api';
-import { MetaInfo } from 'vue-meta';
+// import { MetaInfo } from 'vue-meta';
 
 export default defineComponent({
   name: 'DefaultLayout',
@@ -8,14 +8,9 @@ export default defineComponent({
     return {};
   },
   head() {
-    return {
-      meta: [
-        {
-          name: 'description',
-          content: this.$i18n.t('homepage.target'),
-        },
-      ],
-    } as MetaInfo;
+    return this.$nuxtI18nHead({
+      addSeoAttributes: true,
+    });
   },
 });
 </script>
