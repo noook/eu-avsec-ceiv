@@ -155,4 +155,28 @@ export default {
       step2: 'On-site validation. The EU aviation security validator will assess on-site the effectiveness and the efficacy of the Known Consignors\' security processes. If conclusive, he shall give to the entity the validation report stating the entity is designated KC3.',
     },
   },
+  linksRegulations: {
+    title: 'Links and regulations',
+    europeanCommission: 'European Commission',
+    EC: {
+      link1: '(EC) Information for Air Carriers operating into the Union. (ACC3)',
+      link2: '(EC) Information for cargo handling entities in non-EU countries (RA3-KC3)',
+      link3: '(EC) EU Database ACC3/RA3/KC3 & EU AVSEC Validator',
+    },
+    CEIV: {
+      title: 'Center of Excellence for Independent Validators',
+      link1: 'IATA Center of Excellence for Independent Validators (IATA CEIV)',
+    },
+    EURLEX: {
+      title: 'EUR-Lex',
+      link1: '{0} {1} (Règles Communes dans le domaine de la sûreté de l\'aviation civile)',
+      link2: '{0} {1} (État Membre responsable pour chaque exploitant d\'aéronef)',
+      link3: '{0} {1} (Mesures détaillées pour la mise en œuvre des normes de base communes dans la sûreté de l\'aviation civile)',
+    },
+    latestRegulations: {
+      title: 'The latest Commission Implementing regulations:',
+      link1: '{0} {1} (Commission implementing regulation (EU) 2020/111 of 13 Jan 2020 applicable 01 Apr 2020)',
+      link2: '{0} {1} (Commission implementing regulation (EU) 2020/910 of 30 Jun 2020 applicable 02 Jul 2020)',
+    },
+  },
 } as const;

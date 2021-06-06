@@ -6,6 +6,17 @@ export default defineComponent({
   setup() {
     return {};
   },
+  head() {
+    return {
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.$i18n.t('homepage.target'),
+        },
+      ],
+    };
+  },
 });
 </script>
 
@@ -15,6 +26,9 @@ export default defineComponent({
     <div class="flex justify-center">
       <Nuxt id="nuxt" />
     </div>
+    <footer>
+      Copyright &copy; 2013-{{ new Date().getFullYear() }} EU-AVSEC-CEIV.ORG
+    </footer>
   </div>
 </template>
 
@@ -45,6 +59,10 @@ html {
 #nuxt {
   @apply mt-14 bg-gray-50 w-full;
   max-width: 1200px;
+}
+
+footer {
+  @apply text-xs text-center py-4;
 }
 
 *,

@@ -36,14 +36,10 @@ export default defineComponent({
         name: 'KC3',
         text: 'KC3',
       },
-      // {
-      //   name: 'contact',
-      //   text: 'contact',
-      // },
-      // {
-      //   name: 'links-and-regulations',
-      //   text: 'linksAndRegulations',
-      // },
+      {
+        name: 'links-regulations',
+        text: 'linksAndRegulations',
+      },
     ]);
 
     return {
@@ -56,7 +52,7 @@ export default defineComponent({
 
 <template>
   <nav>
-    <div class="mobile">
+    <div class="mobile lg:hidden">
       <div class="bar">
         <nuxt-link class="text-lg mr-2" :to="switchLocalePath($i18n.locale === 'fr' ? 'en' : 'fr')">
           {{ $i18n.locale === 'fr' ? 'EN' : 'FR' }}
@@ -80,6 +76,16 @@ export default defineComponent({
         </div>
       </transition>
     </div>
+    <div class="desktop">
+      <ul class="flex items-center">
+        <li v-for="link in links" :key="link.name">
+          <nuxt-link :to="localePath(link.name)">{{ $t(link.text) }}</nuxt-link>
+        </li>
+      </ul>
+      <nuxt-link class="text-lg mr-2" :to="switchLocalePath($i18n.locale === 'fr' ? 'en' : 'fr')">
+        {{ $i18n.locale === 'fr' ? 'EN' : 'FR' }}
+      </nuxt-link>
+    </div>
   </nav>
 </template>
 
@@ -87,6 +93,25 @@ export default defineComponent({
 nav {
   @apply fixed top-0 inset-x-0;
   @apply text-white bg-black;
+}
+
+.desktop {
+  @apply h-14 px-4;
+  @apply hidden lg:flex justify-between items-center;
+
+  a {
+    @apply mr-8;
+
+    &.nuxt-link-exact-active {
+      @apply relative;
+
+      &:after {
+        content: '';
+        @apply absolute w-8 mt-1 h-2px bg-white;
+        @apply top-full left-1/2 transform -translate-x-1/2;
+      }
+    }
+  }
 }
 
 .mobile {

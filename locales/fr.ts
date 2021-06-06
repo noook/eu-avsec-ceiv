@@ -154,4 +154,28 @@ export default {
       step2: 'Le validateur évalue sur site l\'effectivité et l\'efficacité des mesures de sûreté de l\'agent habilité. Si la validation est concluante, Il remet alors à disposition de l\'agent habilité son rapport de validation RA3.',
     },
   },
+  linksRegulations: {
+    title: 'Liens et réglementations',
+    europeanCommission: 'Commission Européenne',
+    EC: {
+      link1: '(EC) Information for Air Carriers operating into the Union. (ACC3)',
+      link2: '(EC) Information for cargo handling entities in non-EU countries (RA3-KC3)',
+      link3: '(EC) EU Database ACC3/RA3/KC3 & EU AVSEC Validator',
+    },
+    CEIV: {
+      title: 'Centre d\'excellence pour les validateurs indépendants',
+      link1: 'IATA Center of Excellence for Independent Validators (IATA CEIV)',
+    },
+    EURLEX: {
+      title: 'EUR-Lex',
+      link1: '{0} {1} (Règles Communes dans le domaine de la sûreté de l\'aviation civile)',
+      link2: '{0} {1} (État Membre responsable pour chaque exploitant d\'aéronef)',
+      link3: '{0} {1} (Mesures détaillées pour la mise en œuvre des normes de base communes dans la sûreté de l\'aviation civile)',
+    },
+    latestRegulations: {
+      title: 'Les derniers Réglements d\'éxécution de la Commission:',
+      link1: '{0} {1} (Réglement d\'éxécution (UE) 2020/111 du 13 Janvier 2020 applicable au 01 Avril 2019)',
+      link2: '{0} {1} (Réglement d\'éxécution (UE) 2020/910 du 30 Juin 2020 applicable au 02 Juillet 2020)',
+    },
+  },
 } as const;
