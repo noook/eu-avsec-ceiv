@@ -183,9 +183,9 @@ export default {
     },
     EURLEX: {
       title: 'EUR-Lex',
-      link1: '{0} {1} (Règles Communes dans le domaine de la sûreté de l\'aviation civile)',
-      link2: '{0} {1} (État Membre responsable pour chaque exploitant d\'aéronef)',
-      link3: '{0} {1} (Mesures détaillées pour la mise en œuvre des normes de base communes dans la sûreté de l\'aviation civile)',
+      link1: '{0} {1} (Common rules in the field of civil aviation security)',
+      link2: '{0} {1} (Administering Member State for each aircraft operator  )',
+      link3: '{0} {1} (Detailed measures for the implementation of the common basic standards on aviation security)',
     },
     latestRegulations: {
       title: 'The latest Commission Implementing regulations:',
