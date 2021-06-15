@@ -19,6 +19,20 @@ export default {
     it: 'Italian',
   },
 
+  links: {
+    '2015/1998': 'http://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02015R1998-20160229&rid=1',
+    '300/2008': 'http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CONSLEG:2008R0300:20100201:EN:PDF',
+    EC1: 'http://ec.europa.eu/transport/modes/air/security/cargo-mail/air-carriers_en.htm',
+    EC2: 'http://ec.europa.eu/transport/modes/air/security/cargo-mail/entities_en.htm',
+    EC3: 'https://webgate.ec.europa.eu/ksda/publicAccess.htm',
+    IATACEIV: 'https://www.iata.org/en/programs/security/cargo-security/ceiv/',
+    'LEX-300/2008': 'http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:02008R0300-20100201&qid=1395671571845&from=EN',
+    'LEX-748/2009': 'https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:02009R0748-20200424&qid=1618926485130&from=EN',
+    'LEX-2015/1998': 'https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:02015R1998-20210315&from=EN',
+    '2020/910': 'https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32020R0910&from=EN',
+    '2021/255': 'https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32021R0255&from=EN',
+  },
+
   homepage: {
     welcome: 'Welcome to the EU Aviation Security Center of Excellence Independent Validators Association',
     target: 'This website is exclusively dedicated for customers, who need {0} validations and/or pre-validations in accordance with:',
@@ -126,7 +140,6 @@ export default {
       step2: 'On-site validation. The EU aviation security validator will assess on-site the effectiveness and the efficacy of the Regulated Agents\' security processes. If conclusive, he shall give to the entity the validation report stating the entity is designated RA3.',
     },
   },
-
   kc3: {
     title: 'KC3 Validation & Pre-validation',
     regulationRequirements: 'What are the EU regulations requirements?',
@@ -158,6 +171,7 @@ export default {
   linksRegulations: {
     title: 'Links and regulations',
     europeanCommission: 'European Commission',
+    consolidatedVersions: 'EC / EU Consolidated versions:',
     EC: {
       link1: '(EC) Information for Air Carriers operating into the Union. (ACC3)',
       link2: '(EC) Information for cargo handling entities in non-EU countries (RA3-KC3)',

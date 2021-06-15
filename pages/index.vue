@@ -55,7 +55,7 @@ export default defineComponent({
         </i18n>
         <h3>{{ $t('homepage.regulationImplementation') }}</h3>
         <i18n path="homepage.p1.text" tag="p">
-          <a target="_blank" rel="noopener" href="https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:02015R1998-20160229&rid=1">2015/1998</a>
+          <a target="_blank" rel="noopener" :href="$i18n.t('links.2015/1998')">2015/1998</a>
           <strong>{{ $t('homepage.p1.date') }}</strong>
           <span class="text-red-600 italic">{{ $t('homepage.p1.effectiveDate') }}</span>
         </i18n>

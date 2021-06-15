@@ -19,6 +19,20 @@ export default {
     it: 'Italien',
   },
 
+  links: {
+    '2015/1998': 'http://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:02015R1998-20160229&rid=1',
+    '300/2008': 'http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CONSLEG:2008R0300:20100201:EN:PDF',
+    EC1: 'http://ec.europa.eu/transport/modes/air/security/cargo-mail/air-carriers_en.htm',
+    EC2: 'http://ec.europa.eu/transport/modes/air/security/cargo-mail/entities_en.htm',
+    EC3: 'https://webgate.ec.europa.eu/ksda/publicAccess.htm',
+    IATACEIV: 'https://www.iata.org/en/programs/security/cargo-security/ceiv/',
+    'LEX-300/2008': 'http://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:02008R0300-20100201&rid=1',
+    'LEX-748/2009': 'https://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:02009R0748-20200424&qid=1619096634483&from=FR',
+    'LEX-2015/1998': 'https://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:02015R1998-20210315&qid=1621241688071&from=FR',
+    '2020/910': 'https://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:32019R0103&from=FR',
+    '2021/255': 'https://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:32021R0255&from=FR',
+  },
+
   homepage: {
     welcome: 'Bienvenue à l\'association Internationale des Validateurs UE de sûreté aérienne',
     target: 'Ce site est exclusivement dédié aux clients qui ont recours aux validations et/ou pré-validations {0} conformément au:',
@@ -101,11 +115,11 @@ export default {
     regulationRequirements: 'Quelles sont les exigences réglementaires de l\'UE?',
     p1: 'Règlement(CE) {0} du Parlement Européen et du Conseil du 11 Mars 2008 relatif à l\'instauration de règles communes dans le domaine de la sûreté de l\'aviation civile précise que chaque entité mettant en œuvre des normes de sûreté de l\'aviation devrait {1}',
     p1Keywords: 'établir, appliquer et maintenir un programme de sûreté.',
-    p2: 'Règlement d\'exécution (UE) {0} du 10 Juillet 2013 modifiant le règlement (UE) {1} en ce qui concerne la {1}',
+    p2: 'Règlement d\'exécution (UE) {0} du 10 Juillet 2013 modifiant le règlement (UE) {1} en ce qui concerne la {2}',
     p2Keywords: 'validation UE de sûreté aérienne.',
     footer: 'Le 05 Nov 2015, le Règlement {0} a été abrogé par le Règlement d’exécution {1} applicable le 01 Fev 2016',
     footerLink: '(UE) 185/2010',
-    footerLin2: '(UE) 2015/1998',
+    footerLink2: '(UE) 2015/1998',
     keys: 'Quatre éléments clés pour une validation RA réussie',
     whatWeOffer: 'Ce que nous proposons:',
     prevalidationPrehamble: 'Nous offrons aux Agents habilités la possibilité d\'organiser une pré-validation RA3 afin qu\'ils puissent évaluer leur niveau de conformité. C\'est une étape clé du processus de validation.',
@@ -131,7 +145,7 @@ export default {
     regulationRequirements: 'Quelles sont les exigences réglementaires de l\'UE?',
     p1: 'Règlement(CE) {0} du Parlement Européen et du Conseil du 11 Mars 2008 relatif à l\'instauration de règles communes dans le domaine de la sûreté de l\'aviation civile précise que chaque entité mettant en œuvre des normes de sûreté de l\'aviation devrait {1}',
     p1Keywords: 'établir, appliquer et maintenir un programme de sûreté.',
-    p2: 'Règlement d\'exécution (UE) {0} du 10 Juillet 2013 modifiant le règlement (UE) {1} en ce qui concerne la {1}',
+    p2: 'Règlement d\'exécution (UE) {0} du 10 Juillet 2013 modifiant le règlement (UE) {1} en ce qui concerne la {2}',
     p2Keywords: 'validation UE de sûreté aérienne.',
     footer: 'Le 05 Nov 2015, le Règlement {0} a été abrogé par le Règlement d’exécution {1} applicable le 01 Fev 2016',
     footerLink: '(UE) 185/2010',
@@ -157,6 +171,7 @@ export default {
   linksRegulations: {
     title: 'Liens et réglementations',
     europeanCommission: 'Commission Européenne',
+    consolidatedVersions: 'Textes Consolidés Règlements (EU / CE):',
     EC: {
       link1: '(EC) Information for Air Carriers operating into the Union. (ACC3)',
       link2: '(EC) Information for cargo handling entities in non-EU countries (RA3-KC3)',

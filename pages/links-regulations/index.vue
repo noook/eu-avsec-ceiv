@@ -29,7 +29,7 @@ export default defineComponent({
               <a
                 target="_blank"
                 rel="noopener"
-                href="https://ec.europa.eu/transport/modes/air/security/cargo-mail/air-carriers_en.htm">
+                :href="$i18n.t('links.EC1')">
                 {{ $t('linksRegulations.EC.link1') }}
               </a>
             </li>
@@ -37,7 +37,7 @@ export default defineComponent({
               <a
                 target="_blank"
                 rel="noopener"
-                href="https://ec.europa.eu/transport/modes/air/security/cargo-mail/entities_en.htm">
+                :href="$i18n.t('links.EC2')">
                 {{ $t('linksRegulations.EC.link2') }}
               </a>
             </li>
@@ -45,7 +45,7 @@ export default defineComponent({
               <a
                 target="_blank"
                 rel="noopener"
-                href="https://webgate.ec.europa.eu/ksda/publicAccess.htm">
+                :href="$i18n.t('links.EC3')">
                 {{ $t('linksRegulations.EC.link3') }}
               </a>
             </li>
@@ -54,14 +54,14 @@ export default defineComponent({
       </section>
       <section>
         <h2>{{ $t('linksRegulations.CEIV.title') }}</h2>
-        <div>
+        <div class="flex !items-center">
           <img src="@/assets/img/ceiv.png" alt="CEIV">
           <ul>
             <li>
               <a
                 target="_blank"
                 rel="noopener"
-                href="https://www.iata.org/en/programs/security/cargo-security/ceiv/">
+                :href="$i18n.t('links.IATACEIV')">
                 {{ $t('linksRegulations.CEIV.link1') }}
               </a>
             </li>
@@ -73,26 +73,29 @@ export default defineComponent({
         <div>
           <img src="@/assets/img/eur-lex.png" alt="EUR-Lex">
           <ul>
+            <li class="mb-2">
+              <strong>{{ $t('linksRegulations.consolidatedVersions') }}</strong>
+            </li>
             <i18n path="linksRegulations.EURLEX.link1" tag="li">
               <span>2010-02-01</span>
               <a
                 target="_blank"
                 rel="noopener"
-                href="https://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:02008R0300-20100201&rid=1">(CE) N° 300/2008 (M1.pdf)</a>
+                :href="$i18n.t('links.LEX-300/2008')">(CE) N° 300/2008 (M1.pdf)</a>
             </i18n>
             <i18n path="linksRegulations.EURLEX.link2" tag="li">
               <span>2020-08-22</span>
               <a
                 target="_blank"
                 rel="noopener"
-                href="https://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:02009R0748-20200424&qid=1619096634483&from=FR">(CE) N° 748/2009 (2018/336 M14)</a>
+                :href="$i18n.t('links.LEX-748/2009')">(CE) N° 748/2009 (2018/336 M14)</a>
             </i18n>
             <i18n path="linksRegulations.EURLEX.link3" tag="li">
               <span>2020-07-02</span>
               <a
                 target="_blank"
                 rel="noopener"
-                href="https://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:02015R1998-20210315&qid=1621241688071&from=EN">(EU) No 2015/1998 M9 (.pdf)</a>
+                :href="$i18n.t('links.LEX-2015/1998')">(EU) No 2015/1998 M9 (.pdf)</a>
             </i18n>
           </ul>
         </div>
@@ -107,14 +110,14 @@ export default defineComponent({
               <a
                 target="_blank"
                 rel="noopener"
-                href="https://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:32019R0103&from=EN">(EU) No 2020/910 (M8)</a>
+                :href="$i18n.t('links.2020/910')">(EU) No 2020/910 (M8)</a>
             </i18n>
             <i18n path="linksRegulations.latestRegulations.link2" tag="li">
               <span>2021-02-18</span>
               <a
                 target="_blank"
                 rel="noopener"
-                href="https://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:32021R0255&from=FR">(EU) No 2021/255 (M9)</a>
+                :href="$i18n.t('links.2021/255')">(EU) No 2021/255 (M9)</a>
             </i18n>
           </ul>
         </div>

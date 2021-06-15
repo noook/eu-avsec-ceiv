@@ -70,8 +70,8 @@ export default defineComponent({
           <a
             target="_blank"
             rel="noopener"
-            href="https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CONSLEG:2008R0300:20100201:EN:PDF"
-            class="font-bold">No 300/2008</a>
+            class="font-bold"
+            :href="$i18n.t('links.300/2008')">No 300/2008</a>
           <strong>{{ $t('kc3.p1Keywords') }}</strong>
         </i18n>
 
@@ -84,14 +84,11 @@ export default defineComponent({
         </i18n>
 
         <i18n path="kc3.footer" tag="p" class="text-center text-red-600">
+          <strong>{{ $t('kc3.footerLink') }}</strong>
           <a
             target="_blank"
             rel="noopener"
-            href="https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2010:055:0001:0055:EN:PDF#:~:text=This%20Regulation%20lays%20down%20detailed,supplementing%20the%20common%20basic%20standards">{{ $t('kc3.footerLink') }}</a>
-          <a
-            target="_blank"
-            rel="noopener"
-            href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02015R1998-20160229&rid=1">{{ $t('kc3.footerLink2') }}</a>
+            :href="$i18n.t('links.2015/1998')">{{ $t('kc3.footerLink2') }}</a>
         </i18n>
         <hr class="my-4">
         <h3>{{ $t('kc3.keys') }}</h3>
@@ -135,8 +132,7 @@ export default defineComponent({
             <span>{{ $t('kc3.validation.step2') }}</span>
           </li>
         </ul>
-        <!-- @todo link to contact -->
-        <a href="">{{ $t('contactUs') }}</a>
+        <nuxt-link :to="localePath({ name: 'about-us' })">{{ $t('contactUs') }}</nuxt-link>
       </section>
     </main>
   </div>
@@ -155,6 +151,14 @@ export default defineComponent({
 
     section {
       @apply lg:p-4 sm:px-12 lg:px-4 flex-1;
+
+      ul {
+        @apply mb-4;
+
+        + a {
+          @apply text-blue-800 font-semibold underline;
+        }
+      }
 
       ul li {
         @apply mb-1;

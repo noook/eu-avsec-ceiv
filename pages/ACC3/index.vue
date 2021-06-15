@@ -76,7 +76,7 @@ export default defineComponent({
           <a
             target="_blank"
             rel="noopener"
-            href="https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CONSLEG:2008R0300:20100201:EN:PDF">No 300/2008</a>
+            :href="$i18n.t('links.300/2008')">No 300/2008</a>
           <strong>{{ $t('acc3.p1Keywords') }}</strong>
         </i18n>
 
@@ -96,10 +96,8 @@ export default defineComponent({
         </i18n>
 
         <i18n path="acc3.footer" tag="p" class="text-center text-red-600">
-          <a
-            target="_blank"
-            rel="noopener"
-            href="https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:02015R1998-20160229&qid=1459776851163&from=FR">{{ $t('acc3.footerLink') }}</a>
+          <strong>{{ $t('acc3.footerLink') }}</strong>
+          <strong>{{ $t('acc3.footerLink2') }}</strong>
         </i18n>
         <hr class="my-4">
         <h3>{{ $t('acc3.keys') }}</h3>
@@ -154,8 +152,7 @@ export default defineComponent({
             <span>{{ $t('acc3.validation.step3') }}</span>
           </li>
         </ul>
-        <!-- @todo link to contact -->
-        <a href="">{{ $t('contactUs') }}</a>
+        <nuxt-link :to="localePath({ name: 'about-us' })">{{ $t('contactUs') }}</nuxt-link>
       </section>
     </main>
   </div>
@@ -174,6 +171,14 @@ export default defineComponent({
 
     section {
       @apply lg:p-4 sm:px-12 lg:px-4 flex-1;
+
+      ul {
+        @apply mb-4;
+
+        + a {
+          @apply text-blue-800 font-semibold underline;
+        }
+      }
 
       ul li {
         @apply mb-1;

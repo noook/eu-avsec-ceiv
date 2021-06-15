@@ -84,14 +84,11 @@ export default defineComponent({
         </i18n>
 
         <i18n path="ra3.footer" tag="p" class="text-center text-red-600">
+          <strong>{{ $t('ra3.footerLink') }}</strong>
           <a
             target="_blank"
             rel="noopener"
-            href="https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2010:055:0001:0055:EN:PDF#:~:text=This%20Regulation%20lays%20down%20detailed,supplementing%20the%20common%20basic%20standards">{{ $t('ra3.footerLink') }}</a>
-          <a
-            target="_blank"
-            rel="noopener"
-            href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02015R1998-20160229&rid=1">{{ $t('ra3.footerLink2') }}</a>
+            :href="$i18n.t('links.2015/1998')">{{ $t('ra3.footerLink2') }}</a>
         </i18n>
         <hr class="my-4">
         <h3>{{ $t('ra3.keys') }}</h3>
@@ -142,8 +139,7 @@ export default defineComponent({
             <span>{{ $t('ra3.validation.step2') }}</span>
           </li>
         </ul>
-        <!-- @todo link to contact -->
-        <a href="">{{ $t('contactUs') }}</a>
+        <nuxt-link :to="localePath({ name: 'about-us' })">{{ $t('contactUs') }}</nuxt-link>
       </section>
     </main>
   </div>
@@ -162,6 +158,14 @@ export default defineComponent({
 
     section {
       @apply lg:p-4 sm:px-12 lg:px-4 flex-1;
+
+      ul {
+        @apply mb-4;
+
+        + a {
+          @apply text-blue-800 font-semibold underline;
+        }
+      }
 
       ul li {
         @apply mb-1;
