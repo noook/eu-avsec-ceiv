@@ -184,7 +184,7 @@ export default {
     EURLEX: {
       title: 'EUR-Lex',
       link1: '{0} {1} (Common rules in the field of civil aviation security)',
-      link2: '{0} {1} (Administering Member State for each aircraft operator  )',
+      link2: '{0} {1} (Administering Member State for each aircraft operator)',
       link3: '{0} {1} (Detailed measures for the implementation of the common basic standards on aviation security)',
     },
     latestRegulations: {
