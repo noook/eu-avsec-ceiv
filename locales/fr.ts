@@ -127,7 +127,7 @@ export default {
     validationReason: 'C\'est un moyen pratique et économique de mesurer et de définir la portée de la validation RA3, de comprendre et maitriser la réglementation, ses exigences et comment elles sont interprétées, et de rassembler toutes les informations requises, afin d\'être fin prêts pour pouvoir procéder à une validation simple, rapide et sans accrocs.',
     howWeProceed: 'Comment nous procédons:',
     prevalidation: {
-      '3steps': 'La pré-validation RA est un processus d\'évaluation documentaire en 3 étapes:',
+      '3steps': 'La pré-validation RA3 est un processus d\'évaluation documentaire en 3 étapes:',
       step1: 'Étude approfondie du programme de sûreté de l\'agent habilité ou de ses procédures qui sont la pierre angulaire de tout le processus de validation.',
       step2: 'Étude approfondie de tous les documents en relation avec ce programme de sûreté ou des procédures.',
       step3: 'Nous complétons la liste de contrôle pour la validation des RA3 avec toutes les informations recueillies.',
@@ -150,7 +150,7 @@ export default {
     footer: 'Le 05 Nov 2015, le Règlement {0} a été abrogé par le Règlement d’exécution {1} applicable le 01 Fev 2016',
     footerLink: '(UE) 185/2010',
     footerLink2: '(UE) 2015/1998',
-    keys: 'Quatre éléments clés pour une validation RA réussie',
+    keys: 'Quatre éléments clés pour une validation RA3 réussie',
     whatWeOffer: 'Ce que nous proposons:',
     prevalidationPrehamble: 'Nous offrons aux Chargeurs connus la possibilité d\'organiser une pré-validation KC3 afin qu\'ils puissent évaluer leur niveau de conformité. C\'est une étape clé du processus de validation.',
     whyPrevalidate: 'Pourquoi pré-valider? ',
