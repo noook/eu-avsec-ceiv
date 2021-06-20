@@ -1,6 +1,5 @@
 export default {
   home: 'Home',
-  aboutUs: 'About us',
   news: 'News',
   ACC3: 'ACC3',
   RA3: 'RA3',
@@ -76,6 +75,7 @@ export default {
   },
 
   meetOurTeam: 'Meet our team of EU Aviation Security Validators:',
+  residenceCountry: 'Country of residence:',
 
   acc3: {
     title: 'ACC3 Validation & Pre-validation',

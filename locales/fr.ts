@@ -1,6 +1,5 @@
 export default {
   home: 'Accueil',
-  aboutUs: 'Notre équipe',
   news: 'Les actualités',
   ACC3: 'ACC3',
   RA3: 'RA3',
@@ -76,6 +75,7 @@ export default {
   },
 
   meetOurTeam: 'Faites connaissance avec notre équipe de Validateurs UE de Sûreté Aérienne:',
+  residenceCountry: 'Pays de résidence:',
 
   acc3: {
     title: 'Validation & Pré-validation ACC3',
@@ -120,7 +120,7 @@ export default {
     footer: 'Le 05 Nov 2015, le Règlement {0} a été abrogé par le Règlement d’exécution {1} applicable le 01 Fev 2016',
     footerLink: '(UE) 185/2010',
     footerLink2: '(UE) 2015/1998',
-    keys: 'Quatre éléments clés pour une validation RA réussie',
+    keys: 'Quatre éléments clés pour une validation RA3 réussie',
     whatWeOffer: 'Ce que nous proposons:',
     prevalidationPrehamble: 'Nous offrons aux Agents habilités la possibilité d\'organiser une pré-validation RA3 afin qu\'ils puissent évaluer leur niveau de conformité. C\'est une étape clé du processus de validation.',
     whyPrevalidate: 'Pourquoi pré-valider? ',

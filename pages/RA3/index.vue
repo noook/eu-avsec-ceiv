@@ -124,7 +124,7 @@ export default defineComponent({
             class="text-blue-800 underline font-semibold"
             target="_blank"
             rel="noopener"
-            href="https://docs.google.com/forms/d/e/1FAIpQLScJ8Dnsh0H3OE6AbXcyJkFM30kpWSHy2tnN84XcETtpIh-fQw/viewform">{{ $t('ra3.formText') }}</a>
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdrzXWQfPvYzwC6t5995JgKpiLerJ-VyTUsbaGXzDauhbQuhg/viewform">{{ $t('ra3.formText') }}</a>
         </i18n>
         <img :src="ra3Validation[$i18n.locale]" :alt="ra3Validation[$i18n.locale]">
         <h4 class="my-3">{{ $t('ra3.howWeProceed') }}</h4>

@@ -3,11 +3,11 @@ import { defineComponent } from '@nuxtjs/composition-api';
 import teamMembers from '@/assets/team';
 
 export default defineComponent({
-  name: 'AboutUs',
+  name: 'Contact',
   nuxtI18n: {
     paths: {
-      en: '/about-us',
-      fr: '/notre-equipe',
+      en: '/contact',
+      fr: '/contact',
     },
   },
   setup() {
@@ -27,6 +27,7 @@ export default defineComponent({
         <div class="info">
           <h2>{{ member.name }}<span v-if="member.title">, {{ member.title }}</span></h2>
           <p>{{ member.desc[$i18n.locale] }}</p>
+          <p>{{ $t('residenceCountry') }} {{ member.localization }}</p>
           <p>
             {{ $t('spokenLanguages') }}:
             {{ member.languages.map(lang => $t(`languages.${lang}`)).join(', ') }}

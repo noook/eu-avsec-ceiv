@@ -17,8 +17,8 @@ export default defineComponent({
         text: 'home',
       },
       {
-        name: '/about-us',
-        text: 'aboutUs',
+        name: '/contact',
+        text: 'contact',
       },
       {
         name: 'news',
