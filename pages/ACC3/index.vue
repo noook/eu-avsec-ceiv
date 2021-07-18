@@ -58,6 +58,11 @@ export default defineComponent({
       ...assets,
     };
   },
+  head() {
+    return {
+      title: 'EU-AVSEC-CEIV | ACC3',
+    };
+  },
 });
 </script>
 

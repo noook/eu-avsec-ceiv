@@ -11,6 +11,11 @@ export default defineComponent({
   setup() {
     return {};
   },
+  head() {
+    return {
+      title: `EU-AVSEC-CEIV | ${this.$i18n.t('linksRegulations.title')}`,
+    };
+  },
 });
 </script>
 

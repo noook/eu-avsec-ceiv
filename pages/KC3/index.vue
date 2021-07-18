@@ -52,6 +52,11 @@ export default defineComponent({
       ...assets,
     };
   },
+  head() {
+    return {
+      title: 'EU-AVSEC-CEIV | KC3',
+    };
+  },
 });
 </script>
 

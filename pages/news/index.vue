@@ -42,6 +42,11 @@ export default defineComponent({
       sections,
     };
   },
+  head() {
+    return {
+      title: `EU-AVSEC-CEIV | ${this.$i18n.t('news')}`,
+    };
+  },
 });
 </script>
 

@@ -4,9 +4,6 @@ import { defineComponent } from '@nuxtjs/composition-api';
 
 export default defineComponent({
   name: 'DefaultLayout',
-  setup() {
-    return {};
-  },
   // @ts-ignore
   head() {
     const i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true });

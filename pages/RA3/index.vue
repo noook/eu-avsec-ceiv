@@ -52,6 +52,11 @@ export default defineComponent({
       ...assets,
     };
   },
+  head() {
+    return {
+      title: `EU-AVSEC-CEIV | ${this.$i18n.t('RA3')}`,
+    };
+  },
 });
 </script>
 

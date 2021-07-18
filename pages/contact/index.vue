@@ -15,6 +15,11 @@ export default defineComponent({
       teamMembers,
     };
   },
+  head() {
+    return {
+      title: 'EU-AVSEC-CEIV | Contact',
+    };
+  },
 });
 </script>
 
