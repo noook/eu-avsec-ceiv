@@ -26,7 +26,7 @@ export default {
     EC3: 'https://webgate.ec.europa.eu/ksda/publicAccess.htm',
     IATACEIV: 'https://www.iata.org/en/programs/security/cargo-security/ceiv/',
     'LEX-300/2008': 'http://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:02008R0300-20100201&rid=1',
-    'LEX-748/2009': 'https://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:02009R0748-20200424&qid=1619096634483&from=FR',
+    'LEX-748/2009': 'https://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:02009R0748-20210426&qid=1625757201691&from=FR',
     'LEX-2015/1998': 'https://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:02015R1998-20210315&qid=1621241688071&from=FR',
     '2020/910': 'https://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:32019R0103&from=FR',
     '2021/255': 'https://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:32021R0255&from=FR',

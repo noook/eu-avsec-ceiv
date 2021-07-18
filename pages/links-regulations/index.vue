@@ -88,14 +88,14 @@ export default defineComponent({
               <a
                 target="_blank"
                 rel="noopener"
-                :href="$i18n.t('links.LEX-748/2009')">(CE) N° 748/2009 (2018/336 M14)</a>
+                :href="$i18n.t('links.LEX-748/2009')">(CE) N° 748/2009 (M15.pdf)</a>
             </i18n>
             <i18n path="linksRegulations.EURLEX.link3" tag="li">
               <span>2020-07-02</span>
               <a
                 target="_blank"
                 rel="noopener"
-                :href="$i18n.t('links.LEX-2015/1998')">(EU) No 2015/1998 M9 (.pdf)</a>
+                :href="$i18n.t('links.LEX-2015/1998')">(EU) N° 2015/1998 (M9.pdf)</a>
             </i18n>
           </ul>
         </div>
