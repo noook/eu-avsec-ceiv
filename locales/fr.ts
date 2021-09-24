@@ -10,6 +10,8 @@ export default {
   or: 'ou',
   step: 'étape',
   readMore: 'lire plus',
+  europeanCommission: 'CE',
+  europeanUnion: 'UE',
 
   spokenLanguages: 'Langues',
   languages: {

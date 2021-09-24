@@ -10,6 +10,8 @@ export default {
   or: 'or',
   step: 'step',
   readMore: 'read more',
+  europeanCommission: 'EC',
+  europeanUnion: 'EU',
 
   spokenLanguages: 'Languages',
   languages: {

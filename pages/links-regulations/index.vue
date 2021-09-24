@@ -81,26 +81,28 @@ export default defineComponent({
             <li class="mb-2">
               <strong>{{ $t('linksRegulations.consolidatedVersions') }}</strong>
             </li>
+            <!-- @todo -->
+            <!-- CE -> EC in english -->
             <i18n path="linksRegulations.EURLEX.link1" tag="li">
               <span>2010-02-01</span>
               <a
                 target="_blank"
                 rel="noopener"
-                :href="$i18n.t('links.LEX-300/2008')">(CE) N° 300/2008 (M1.pdf)</a>
+                :href="$i18n.t('links.LEX-300/2008')">({{ $t('europeanCommission') }}) N° 300/2008 (M1.pdf)</a>
             </i18n>
             <i18n path="linksRegulations.EURLEX.link2" tag="li">
               <span>2020-08-22</span>
               <a
                 target="_blank"
                 rel="noopener"
-                :href="$i18n.t('links.LEX-748/2009')">(CE) N° 748/2009 (M15.pdf)</a>
+                :href="$i18n.t('links.LEX-748/2009')">({{ $t('europeanCommission') }}) N° 748/2009 (M15.pdf)</a>
             </i18n>
             <i18n path="linksRegulations.EURLEX.link3" tag="li">
               <span>2020-07-02</span>
               <a
                 target="_blank"
                 rel="noopener"
-                :href="$i18n.t('links.LEX-2015/1998')">(EU) N° 2015/1998 (M9.pdf)</a>
+                :href="$i18n.t('links.LEX-2015/1998')">({{ $t('europeanUnion') }}) N° 2015/1998 (M9.pdf)</a>
             </i18n>
           </ul>
         </div>
@@ -115,14 +117,14 @@ export default defineComponent({
               <a
                 target="_blank"
                 rel="noopener"
-                :href="$i18n.t('links.2020/910')">(EU) No 2020/910 (M8)</a>
+                :href="$i18n.t('links.2020/910')">({{ $t('europeanUnion') }}) No 2020/910 (M8)</a>
             </i18n>
             <i18n path="linksRegulations.latestRegulations.link2" tag="li">
               <span>2021-02-18</span>
               <a
                 target="_blank"
                 rel="noopener"
-                :href="$i18n.t('links.2021/255')">(EU) No 2021/255 (M9)</a>
+                :href="$i18n.t('links.2021/255')">({{ $t('europeanUnion') }}) No 2021/255 (M9)</a>
             </i18n>
           </ul>
         </div>
