@@ -31,7 +31,8 @@ export default {
     'LEX-748/2009': 'https://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:02009R0748-20210426&qid=1625757201691&from=FR',
     'LEX-2015/1998': 'https://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:02015R1998-20210315&qid=1621241688071&from=FR',
     '2020/910': 'https://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:32019R0103&from=FR',
-    '2021/255': 'https://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:32021R0255&from=FR',
+    '2021/662': 'https://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:32021R0662&from=EN',
+    '2021/255': 'https://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:32021R0255&from=EN',
   },
 
   homepage: {
@@ -191,8 +192,8 @@ export default {
     },
     latestRegulations: {
       title: 'Les derniers Réglements d\'éxécution de la Commission:',
-      link1: '{0} {1} (Réglement d\'éxécution (UE) 2020/111 du 13 Janvier 2020 applicable au 01 Avril 2019)',
-      link2: '{0} {1} (Réglement d\'éxécution (UE) 2020/910 du 30 Juin 2020 applicable au 02 Juillet 2020)',
+      link1: '{0} {1}',
+      link2: '{0} {1}',
     },
   },
 } as const;

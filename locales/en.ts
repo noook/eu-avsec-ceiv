@@ -31,6 +31,7 @@ export default {
     'LEX-748/2009': 'https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:02009R0748-20210426&qid=1625757144392&from=EN',
     'LEX-2015/1998': 'https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:02015R1998-20210315&from=EN',
     '2020/910': 'https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32020R0910&from=EN',
+    '2021/662': 'https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32021R0662&from=EN',
     '2021/255': 'https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32021R0255&from=EN',
   },
 
@@ -191,8 +192,8 @@ export default {
     },
     latestRegulations: {
       title: 'The latest Commission Implementing regulations:',
-      link1: '{0} {1} (Commission implementing regulation (EU) 2020/111 of 13 Jan 2020 applicable 01 Apr 2020)',
-      link2: '{0} {1} (Commission implementing regulation (EU) 2020/910 of 30 Jun 2020 applicable 02 Jul 2020)',
+      link1: '{0} {1}',
+      link2: '{0} {1}',
     },
   },
 } as const;
