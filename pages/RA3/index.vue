@@ -144,7 +144,7 @@ export default defineComponent({
             <span>{{ $t('ra3.validation.step2') }}</span>
           </li>
         </ul>
-        <nuxt-link :to="localePath({ name: 'about-us' })">{{ $t('contactUs') }}</nuxt-link>
+        <nuxt-link :to="localePath({ name: 'contact' })">{{ $t('contactUs') }}</nuxt-link>
       </section>
     </main>
   </div>

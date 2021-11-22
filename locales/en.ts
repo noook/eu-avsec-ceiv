@@ -153,7 +153,7 @@ export default {
     footer: 'On 05 Nov 2015, Commission Regulation {0} has been repealed by {1} effective 01 Feb 2016',
     footerLink: '(EU) n°185/2010',
     footerLink2: '(EU) 2015/1998',
-    keys: 'Four Keys to a successful RA3 validation',
+    keys: 'Four Keys to a successful KC3 validation',
     whatWeOffer: 'What we offer:',
     prevalidationPrehamble: 'We offer Known Consignors the chance to schedule a pre-validation assessment which is the 1st key step of the validation process.',
     whyPrevalidate: 'Why pre-validate ?',
@@ -166,7 +166,7 @@ export default {
       step3: 'We complete the validation checklist for KC3 with the information compiled.',
     },
     validation: {
-      '2steps': 'The RKC3 validation is a 2 step process:',
+      '2steps': 'The KC3 validation is a 2 step process:',
       step1: 'Begins with the pre-validation assessment which is the 1st key step of the validation process. This step must be conclusive before the EU aviation security validator can proceed to the on-site validation.',
       step2: 'On-site validation. The EU aviation security validator will assess on-site the effectiveness and the efficacy of the Known Consignors\' security processes. If conclusive, he shall give to the entity the validation report stating the entity is designated KC3.',
     },
