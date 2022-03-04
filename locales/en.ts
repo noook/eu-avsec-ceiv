@@ -25,7 +25,7 @@ export default {
     '300/2008': 'http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CONSLEG:2008R0300:20100201:EN:PDF',
     EC1: 'http://ec.europa.eu/transport/modes/air/security/cargo-mail/air-carriers_en.htm',
     EC2: 'http://ec.europa.eu/transport/modes/air/security/cargo-mail/entities_en.htm',
-    EC3: 'https://webgate.ec.europa.eu/ksda/publicAccess.htm',
+    EC3: 'https://ksda.ec.europa.eu/public/screen/home',
     IATACEIV: 'https://www.iata.org/en/programs/security/cargo-security/ceiv/',
     'LEX-300/2008': 'http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:02008R0300-20100201&qid=1395671571845&from=EN',
     'LEX-748/2009': 'https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:02009R0748-20210426&qid=1625757144392&from=EN',
