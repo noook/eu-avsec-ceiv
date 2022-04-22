@@ -29,10 +29,10 @@ export default {
     IATACEIV: 'https://www.iata.org/en/programs/security/cargo-security/ceiv/',
     'LEX-300/2008': 'http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:02008R0300-20100201&qid=1395671571845&from=EN',
     'LEX-748/2009': 'https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:02009R0748-20210426&qid=1625757144392&from=EN',
-    'LEX-2015/1998': 'https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:02015R1998-20210315&from=EN',
+    'LEX-2015/1998': ' https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:02015R1998-20220301&qid=1650385584785&from=EN',
     '2020/910': 'https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32020R0910&from=EN',
     '2021/662': 'https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32021R0662&from=EN',
-    '2021/255': 'https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32021R0255&from=EN',
+    '2022/421': 'https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32022R0421&qid=1650385866142&from=EN',
   },
 
   homepage: {
