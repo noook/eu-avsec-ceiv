@@ -111,18 +111,11 @@ export default defineComponent({
           <img src="@/assets/img/breaking-news.jpg" alt="latest news">
           <ul>
             <i18n path="linksRegulations.latestRegulations.link1" tag="li">
-              <span>2021-04-22</span>
+              <span>2022-07-07</span>
               <a
                 target="_blank"
                 rel="noopener"
-                :href="$i18n.t('links.2021/662')">({{ $t('europeanUnion') }}) No 2021/662 (M15)</a>
-            </i18n>
-            <i18n path="linksRegulations.latestRegulations.link2" tag="li">
-              <span>2022-03-14</span>
-              <a
-                target="_blank"
-                rel="noopener"
-                :href="$i18n.t('links.2022/421')">({{ $t('europeanUnion') }}) No 2022/421</a>
+                :href="$i18n.t('links.2022/1174')">({{ $t('europeanUnion') }}) No 2022/1174 (M15) (2015/1998 M15.pdf)</a>
             </i18n>
           </ul>
         </div>

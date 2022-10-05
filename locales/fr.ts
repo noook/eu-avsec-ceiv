@@ -31,8 +31,7 @@ export default {
     'LEX-748/2009': 'https://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:02009R0748-20220325&qid=1664382533000&from=EN',
     'LEX-2015/1998': 'https://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:02015R1998-20220701&qid=1664382898963&from=EN',
     '2020/910': 'https://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:32019R0103&from=FR',
-    '2021/662': 'https://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:32021R0662&from=EN',
-    '2022/421': 'https://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:32022R0421&qid=1650385866142&from=EN',
+    '2022/1174': 'https://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:32022R1174&from=FR',
   },
 
   homepage: {
