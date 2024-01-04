@@ -1,22 +1,16 @@
-<script lang="ts">
-import { defineComponent } from '@vue/composition-api';
+<script setup lang="ts">
+defineI18nRoute({
+  paths: {
+    fr: '/liens-et-reglementations',
+    en: '/links-and-regulations'
+  }
+})
 
-export default defineComponent({
-  nuxtI18n: {
-    paths: {
-      fr: '/liens-et-reglementations',
-      en: '/links-and-regulations',
-    },
-  },
-  setup() {
-    return {};
-  },
-  head() {
-    return {
-      title: `EU-AVSEC-CEIV | ${this.$i18n.t('linksRegulations.title')}`,
-    };
-  },
-});
+const i18n = useI18n()
+
+useHead({
+  title: `EU-AVSEC-CEIV | ${i18n.t('linksRegulations.title')}`
+})
 </script>
 
 <template>
@@ -34,7 +28,7 @@ export default defineComponent({
               <a
                 target="_blank"
                 rel="noopener"
-                :href="$i18n.t('links.EC1')">
+                :href="$t('links.EC1')">
                 {{ $t('linksRegulations.EC.link1') }}
               </a>
             </li>
@@ -42,7 +36,7 @@ export default defineComponent({
               <a
                 target="_blank"
                 rel="noopener"
-                :href="$i18n.t('links.EC2')">
+                :href="$t('links.EC2')">
                 {{ $t('linksRegulations.EC.link2') }}
               </a>
             </li>
@@ -50,7 +44,7 @@ export default defineComponent({
               <a
                 target="_blank"
                 rel="noopener"
-                :href="$i18n.t('links.EC3')">
+                :href="$t('links.EC3')">
                 {{ $t('linksRegulations.EC.link3') }}
               </a>
             </li>
@@ -66,7 +60,7 @@ export default defineComponent({
               <a
                 target="_blank"
                 rel="noopener"
-                :href="$i18n.t('links.IATACEIV')">
+                :href="$t('links.IATACEIV')">
                 {{ $t('linksRegulations.CEIV.link1') }}
               </a>
             </li>
@@ -86,21 +80,21 @@ export default defineComponent({
               <a
                 target="_blank"
                 rel="noopener"
-                :href="$i18n.t('links.LEX-300/2008')">({{ $t('europeanCommission') }}) N° 300/2008 (M1.pdf)</a>
+                :href="$t('links.LEX-300/2008')">({{ $t('europeanCommission') }}) N° 300/2008 (M1.pdf)</a>
             </i18n>
             <i18n path="linksRegulations.EURLEX.link2" tag="li">
               <span>2022-03-25</span>
               <a
                 target="_blank"
                 rel="noopener"
-                :href="$i18n.t('links.LEX-748/2009')">({{ $t('europeanCommission') }}) N° 748/2009 (M16.pdf)</a>
+                :href="$t('links.LEX-748/2009')">({{ $t('europeanCommission') }}) N° 748/2009 (M16.pdf)</a>
             </i18n>
             <i18n path="linksRegulations.EURLEX.link3" tag="li">
               <span>2022-07-07</span>
               <a
                 target="_blank"
                 rel="noopener"
-                :href="$i18n.t('links.LEX-2015/1998')">({{ $t('europeanUnion') }}) N° 2015/1998 (M15.pdf)</a>
+                :href="$t('links.LEX-2015/1998')">({{ $t('europeanUnion') }}) N° 2015/1998 (M15.pdf)</a>
             </i18n>
           </ul>
         </div>
@@ -115,7 +109,7 @@ export default defineComponent({
               <a
                 target="_blank"
                 rel="noopener"
-                :href="$i18n.t('links.2022/1174')">({{ $t('europeanUnion') }}) No 2022/1174 (M15) (2015/1998 M15.pdf)</a>
+                :href="$t('links.2022/1174')">({{ $t('europeanUnion') }}) No 2022/1174 (M15) (2015/1998 M15.pdf)</a>
             </i18n>
           </ul>
         </div>

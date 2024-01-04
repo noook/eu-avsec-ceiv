@@ -1,41 +1,34 @@
-<script lang="ts">
-import { defineComponent } from '@nuxtjs/composition-api';
-import safetyEvolvesFr from '@/assets/img/aviation-safety-evolves_fr.png';
-import safetyEvolvesEn from '@/assets/img/aviation-safety-evolves_en.png';
-import ourMissionFr from '@/assets/img/our-mission_fr.png';
-import ourMissionEn from '@/assets/img/our-mission_en.png';
-import ourVisionFr from '@/assets/img/our-vision_fr.png';
-import ourVisionEn from '@/assets/img/our-vision_en.png';
-import ourValuesFr from '@/assets/img/our-values_fr.png';
-import ourValuesEn from '@/assets/img/our-values_en.png';
+<script setup lang="ts">
+import type { WritableComputedRef } from 'vue'
+import safetyEvolvesFr from '@/assets/img/aviation-safety-evolves_fr.png'
+import safetyEvolvesEn from '@/assets/img/aviation-safety-evolves_en.png'
+import ourMissionFr from '@/assets/img/our-mission_fr.png'
+import ourMissionEn from '@/assets/img/our-mission_en.png'
+import ourVisionFr from '@/assets/img/our-vision_fr.png'
+import ourVisionEn from '@/assets/img/our-vision_en.png'
+import ourValuesFr from '@/assets/img/our-values_fr.png'
+import ourValuesEn from '@/assets/img/our-values_en.png'
 
-export default defineComponent({
-  name: 'Home',
-  setup() {
-    const assets: Record<string, LocalizedAsset> = {
-      safetyEvolves: {
-        fr: safetyEvolvesFr,
-        en: safetyEvolvesEn,
-      },
-      ourMission: {
-        fr: ourMissionFr,
-        en: ourMissionEn,
-      },
-      ourVision: {
-        fr: ourVisionFr,
-        en: ourVisionEn,
-      },
-      ourValues: {
-        fr: ourValuesFr,
-        en: ourValuesEn,
-      },
-    };
-
-    return {
-      ...assets,
-    };
+const assets: Record<string, LocalizedAsset> = {
+  safetyEvolves: {
+    fr: safetyEvolvesFr,
+    en: safetyEvolvesEn
   },
-});
+  ourMission: {
+    fr: ourMissionFr,
+    en: ourMissionEn
+  },
+  ourVision: {
+    fr: ourVisionFr,
+    en: ourVisionEn
+  },
+  ourValues: {
+    fr: ourValuesFr,
+    en: ourValuesEn
+  }
+}
+
+const locale = useI18n().locale as WritableComputedRef<'fr' | 'en'>
 </script>
 
 <template>
@@ -55,7 +48,7 @@ export default defineComponent({
         </i18n>
         <h3>{{ $t('homepage.regulationImplementation') }}</h3>
         <i18n path="homepage.p1.text" tag="p">
-          <a target="_blank" rel="noopener" :href="$i18n.t('links.2015/1998')">2015/1998</a>
+          <a target="_blank" rel="noopener" :href="$t('links.2015/1998')">2015/1998</a>
           <strong>{{ $t('homepage.p1.date') }}</strong>
           <span class="text-red-600 italic">{{ $t('homepage.p1.effectiveDate') }}</span>
         </i18n>
@@ -68,7 +61,7 @@ export default defineComponent({
           <strong>{{ $t('homepage.p3.ra3') }}</strong>
           <strong>{{ $t('homepage.p3.kc3') }}</strong>
         </i18n>
-        <img :src="safetyEvolves[$i18n.locale]" :alt="$t('homepage.aviationSafetyEvolves')">
+        <img :src="assets.safetyEvolves[locale]" :alt="$t('homepage.aviationSafetyEvolves')">
         <p class="text-lg text-right font-semibold tracking-wider">
           {{ $t('homepage.areYouReady') }}
         </p>
@@ -81,11 +74,11 @@ export default defineComponent({
       </section>
       <hr class="lg:hidden border-warm-gray-300">
       <section>
-        <img :src="ourMission[$i18n.locale]" :alt="$t('homepage.ourMission')">
+        <img :src="assets.ourMission[locale]" :alt="$t('homepage.ourMission')">
         <p>{{ $t('homepage.ourMissionText') }}</p>
-        <img :src="ourVision[$i18n.locale]" :alt="$t('homepage.ourVision')">
+        <img :src="assets.ourVision[locale]" :alt="$t('homepage.ourVision')">
         <p>{{ $t('homepage.ourVisionText') }}</p>
-        <img :src="ourValues[$i18n.locale]" :alt="$t('homepage.ourValues')">
+        <img :src="assets.ourValues[locale]" :alt="$t('homepage.ourValues')">
         <ul>
           <li>
             <h4>{{ $t('homepage.integrity') }}</h4>

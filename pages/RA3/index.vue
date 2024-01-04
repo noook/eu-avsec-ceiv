@@ -1,63 +1,59 @@
-<script lang="ts">
-import { defineComponent } from '@vue/composition-api';
-import ra3KeysFr from '@/assets/img/ra3-keys_fr.png';
-import ra3KeysEn from '@/assets/img/ra3-keys_en.png';
-import ra3OffersFr from '@/assets/img/ra3-offers_fr.png';
-import ra3OffersEn from '@/assets/img/ra3-offers_en.png';
-import ra3PrevalidationFr from '@/assets/img/ra3-prevalidation_fr.png';
-import ra3PrevalidationEn from '@/assets/img/ra3-prevalidation_en.png';
-import ra3ValidationFr from '@/assets/img/ra3-validation_fr.png';
-import ra3ValidationEn from '@/assets/img/ra3-validation_en.png';
-import ra3SecurityProgramEn from '@/assets/img/ra3-entity-security-program_en.png';
-import ra3SecurityProgramFr from '@/assets/img/ra3-entity-security-program_fr.png';
-import ra3SecurityValidationEn from '@/assets/img/ra3-security-validation_en.png';
-import ra3SecurityValidationFr from '@/assets/img/ra3-security-validation_fr.png';
+<script setup lang="ts">
+import type { WritableComputedRef } from 'vue'
+import ra3KeysFr from '@/assets/img/ra3-keys_fr.png'
+import ra3KeysEn from '@/assets/img/ra3-keys_en.png'
+import ra3OffersFr from '@/assets/img/ra3-offers_fr.png'
+import ra3OffersEn from '@/assets/img/ra3-offers_en.png'
+import ra3PrevalidationFr from '@/assets/img/ra3-prevalidation_fr.png'
+import ra3PrevalidationEn from '@/assets/img/ra3-prevalidation_en.png'
+import ra3ValidationFr from '@/assets/img/ra3-validation_fr.png'
+import ra3ValidationEn from '@/assets/img/ra3-validation_en.png'
+import ra3SecurityProgramEn from '@/assets/img/ra3-entity-security-program_en.png'
+import ra3SecurityProgramFr from '@/assets/img/ra3-entity-security-program_fr.png'
+import ra3SecurityValidationEn from '@/assets/img/ra3-security-validation_en.png'
+import ra3SecurityValidationFr from '@/assets/img/ra3-security-validation_fr.png'
 
-export default defineComponent({
-  nuxtI18n: {
-    paths: {
-      fr: '/ra3',
-      en: '/ra3',
-    },
-  },
-  setup() {
-    const assets: Record<string, LocalizedAsset> = {
-      ra3Keys: {
-        fr: ra3KeysFr,
-        en: ra3KeysEn,
-      },
-      ra3Offers: {
-        fr: ra3OffersFr,
-        en: ra3OffersEn,
-      },
-      ra3Prevalidation: {
-        fr: ra3PrevalidationFr,
-        en: ra3PrevalidationEn,
-      },
-      ra3Validation: {
-        fr: ra3ValidationFr,
-        en: ra3ValidationEn,
-      },
-      ra3SecurityProgram: {
-        fr: ra3SecurityProgramFr,
-        en: ra3SecurityProgramEn,
-      },
-      ra3SecurityValidation: {
-        fr: ra3SecurityValidationFr,
-        en: ra3SecurityValidationEn,
-      },
-    };
+defineI18nRoute({
+  paths: {
+    fr: '/ra3',
+    en: '/ra3'
+  }
+})
 
-    return {
-      ...assets,
-    };
+const i18n = useI18n()
+const locale = useI18n().locale as WritableComputedRef<'fr' | 'en'>
+const localePath = useLocalePath()
+
+useHead({
+  title: `EU-AVSEC-CEIV | ${i18n.t('RA3')}`
+})
+
+const assets: Record<string, LocalizedAsset> = {
+  ra3Keys: {
+    fr: ra3KeysFr,
+    en: ra3KeysEn
   },
-  head() {
-    return {
-      title: `EU-AVSEC-CEIV | ${this.$i18n.t('RA3')}`,
-    };
+  ra3Offers: {
+    fr: ra3OffersFr,
+    en: ra3OffersEn
   },
-});
+  ra3Prevalidation: {
+    fr: ra3PrevalidationFr,
+    en: ra3PrevalidationEn
+  },
+  ra3Validation: {
+    fr: ra3ValidationFr,
+    en: ra3ValidationEn
+  },
+  ra3SecurityProgram: {
+    fr: ra3SecurityProgramFr,
+    en: ra3SecurityProgramEn
+  },
+  ra3SecurityValidation: {
+    fr: ra3SecurityValidationFr,
+    en: ra3SecurityValidationEn
+  }
+}
 </script>
 
 <template>
@@ -70,7 +66,7 @@ export default defineComponent({
         <h3 class="requirements">{{ $t('ra3.regulationRequirements') }}</h3>
 
         <!-- ra3SecurityProgram -->
-        <img :src="ra3SecurityProgram[$i18n.locale]" :alt="ra3SecurityProgram[$i18n.locale]">
+        <img :src="assets.ra3SecurityProgram[locale]" :alt="assets.ra3SecurityProgram[locale]">
         <i18n path="ra3.p1" tag="p">
           <a
             target="_blank"
@@ -81,7 +77,7 @@ export default defineComponent({
         </i18n>
 
         <!-- ra3SecurityValidation -->
-        <img :src="ra3SecurityValidation[$i18n.locale]" :alt="ra3SecurityValidation[$i18n.locale]">
+        <img :src="assets.ra3SecurityValidation[locale]" :alt="assets.ra3SecurityValidation[locale]">
         <i18n path="ra3.p2" tag="p">
           <strong>No 654/2013</strong>
           <strong>No 185/2010</strong>
@@ -93,18 +89,18 @@ export default defineComponent({
           <a
             target="_blank"
             rel="noopener"
-            :href="$i18n.t('links.2015/1998')">{{ $t('ra3.footerLink2') }}</a>
+            :href="$t('links.2015/1998')">{{ $t('ra3.footerLink2') }}</a>
         </i18n>
         <hr class="my-4">
         <h3>{{ $t('ra3.keys') }}</h3>
-        <img class="keys" :src="ra3Keys[$i18n.locale]" :alt="ra3Keys[$i18n.locale]">
+        <img class="keys" :src="assets.ra3Keys[locale]" :alt="assets.ra3Keys[locale]">
       </section>
       <section>
         <h3>{{ $t('ra3.whatWeOffer') }}</h3>
-        <img class="h-20 mx-auto" :src="ra3Offers[$i18n.locale]" :alt="ra3Offers[$i18n.locale]">
+        <img class="h-20 mx-auto" :src="assets.ra3Offers[locale]" :alt="assets.ra3Offers[locale]">
         <hr class="my-6 border-gray-500">
         <!-- Prevalidation -->
-        <img :src="ra3Prevalidation[$i18n.locale]" :alt="ra3Prevalidation[$i18n.locale]">
+        <img :src="assets.ra3Prevalidation[locale]" :alt="assets.ra3Prevalidation[locale]">
         <p class="my-3">{{ $t('ra3.prevalidationPrehamble') }}</p>
         <h4>{{ $t('ra3.whyPrevalidate') }}</h4>
         <p class="my-3">{{ $t('ra3.validationReason') }}</p>
@@ -131,7 +127,7 @@ export default defineComponent({
             rel="noopener"
             href="https://docs.google.com/forms/d/e/1FAIpQLSdrzXWQfPvYzwC6t5995JgKpiLerJ-VyTUsbaGXzDauhbQuhg/viewform">{{ $t('ra3.formText') }}</a>
         </i18n>
-        <img :src="ra3Validation[$i18n.locale]" :alt="ra3Validation[$i18n.locale]">
+        <img :src="assets.ra3Validation[locale]" :alt="assets.ra3Validation[locale]">
         <h4 class="my-3">{{ $t('ra3.howWeProceed') }}</h4>
         <p class="my-3">{{ $t('ra3.validation.2steps') }}</p>
         <ul>

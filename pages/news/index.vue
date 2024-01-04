@@ -1,53 +1,46 @@
-<script lang="ts">
-import { computed, defineComponent } from '@vue/composition-api';
-import articles, { NewsEntry } from '@/assets/news';
+<script setup lang="ts">
+import articles, { type NewsEntry } from '@/assets/news'
 
-export default defineComponent({
-  name: 'News',
-  nuxtI18n: {
-    paths: {
-      fr: '/actus',
-      en: '/news',
-    },
-  },
-  setup() {
-    const sections = computed(() => {
-      const sorted = [...articles].sort((a, b) => +b.period - +a.period);
-      const groups = sorted.reduce<Record<string, NewsEntry[]>>((acc, article) => {
-        const key = `${article.period.getMonth()}/${article.period.getFullYear()}`;
+defineI18nRoute({
+  paths: {
+    fr: '/actus',
+    en: '/news'
+  }
+})
 
-        if (!acc[key]) {
-          acc[key] = [];
-        }
+const i18n = useI18n()
 
-        acc[key].push(article);
+useHead({
+  title: `EU-AVSEC-CEIV | ${i18n.t('news')}`
+})
 
-        return acc;
-      }, {});
+const sections = computed(() => {
+  const sorted = [...articles].sort((a, b) => +b.period - +a.period)
+  const groups = sorted.reduce<Record<string, NewsEntry[]>>((acc, article) => {
+    const key = `${article.period.getMonth()}/${article.period.getFullYear()}`
 
-      return Object
-        .entries(groups)
-        .sort((a, b) => +b[1][0].period - +a[1][0].period)
-        .map(([period, items]) => {
-          const [month, year] = period.split('/').map(Number);
+    if (!acc[key]) {
+      acc[key] = []
+    }
 
-          return {
-            period: new Date(year, month),
-            items,
-          };
-        });
-    });
+    acc[key].push(article)
 
-    return {
-      sections,
-    };
-  },
-  head() {
-    return {
-      title: `EU-AVSEC-CEIV | ${this.$i18n.t('news')}`,
-    };
-  },
-});
+    return acc
+  }, {})
+
+  return Object
+    .entries(groups)
+    .sort((a, b) => +b[1][0].period - +a[1][0].period)
+    .map(([period, items]) => {
+      const [month, year] = period.split('/').map(Number)
+
+      return {
+        period: new Date(year, month),
+        items
+      }
+    })
+})
+
 </script>
 
 <template>

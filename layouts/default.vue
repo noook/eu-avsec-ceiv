@@ -1,33 +1,29 @@
-<script lang="ts">
-import { defineComponent } from '@nuxtjs/composition-api';
-// import { MetaInfo } from 'vue-meta';
+<script setup lang="ts">
+const head = useLocaleHead({
+  addSeoAttributes: true
+})
 
-export default defineComponent({
-  name: 'DefaultLayout',
-  // @ts-ignore
-  head() {
-    const i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true });
-    return {
-      htmlAttrs: {
-        ...i18nHead.htmlAttrs,
-      },
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: `
-            ${this.$i18n.t('homepage.welcome')}
-            ${this.$i18n.t('homepage.target', [`${this.$i18n.t('ACC3')} ${this.$i18n.t('RA3')} ${this.$i18n.t('or')} ${this.$i18n.t('KC3')}`])}
-          `,
-        },
-        ...i18nHead.meta,
-      ],
-      link: [
-        ...i18nHead.link,
-      ],
-    };
+const i18n = useI18n()
+
+useHead({
+  htmlAttrs: {
+    ...head.value.htmlAttrs
   },
-});
+  meta: [
+    {
+      hid: 'description',
+      name: 'description',
+      content: `
+        ${i18n.t('homepage.welcome')}
+        ${i18n.t('homepage.target', [`${i18n.t('ACC3')} ${i18n.t('RA3')} ${i18n.t('or')} ${i18n.t('KC3')}`])}
+      `
+    },
+    ...head.value.meta ?? []
+  ],
+  link: [
+    ...head.value.link ?? []
+  ]
+})
 </script>
 
 <template>

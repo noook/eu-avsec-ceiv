@@ -1,26 +1,16 @@
-<script lang="ts">
-import { defineComponent } from '@nuxtjs/composition-api';
-import teamMembers from '@/assets/team';
+<script setup lang="ts">
+import teamMembers from '@/assets/team'
 
-export default defineComponent({
-  name: 'Contact',
-  nuxtI18n: {
-    paths: {
-      en: '/contact',
-      fr: '/contact',
-    },
-  },
-  setup() {
-    return {
-      teamMembers,
-    };
-  },
-  head() {
-    return {
-      title: 'EU-AVSEC-CEIV | Contact',
-    };
-  },
-});
+defineI18nRoute({
+  paths: {
+    en: '/contact',
+    fr: '/contact'
+  }
+})
+
+useHead({
+  title: 'EU-AVSEC-CEIV | Contact'
+})
 </script>
 
 <template>

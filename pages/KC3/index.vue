@@ -1,63 +1,57 @@
-<script lang="ts">
-import { defineComponent } from '@vue/composition-api';
-import kc3AirSafetyEn from '@/assets/img/kc3-air-safety_en.png';
-import kc3AirSafetyFr from '@/assets/img/kc3-air-safety_fr.png';
-import kc3SafetyEntityEn from '@/assets/img/kc3-safety-entity_en.png';
-import kc3SafetyEntityFr from '@/assets/img/kc3-safety-entity_fr.png';
-import kc3KeysFr from '@/assets/img/kc3-keys_fr.png';
-import kc3KeysEn from '@/assets/img/kc3-keys_en.png';
-import kc3OffersFr from '@/assets/img/kc3-offers_fr.png';
-import kc3OffersEn from '@/assets/img/kc3-offers_en.png';
-import kc3PrevalidationFr from '@/assets/img/kc3-prevalidation_fr.png';
-import kc3PrevalidationEn from '@/assets/img/kc3-prevalidation_en.png';
-import kc3ValidationFr from '@/assets/img/kc3-validation_fr.png';
-import kc3ValidationEn from '@/assets/img/kc3-validation_en.png';
+<script setup lang="ts">
+import type { WritableComputedRef } from 'vue'
+import kc3AirSafetyEn from '@/assets/img/kc3-air-safety_en.png'
+import kc3AirSafetyFr from '@/assets/img/kc3-air-safety_fr.png'
+import kc3SafetyEntityEn from '@/assets/img/kc3-safety-entity_en.png'
+import kc3SafetyEntityFr from '@/assets/img/kc3-safety-entity_fr.png'
+import kc3KeysFr from '@/assets/img/kc3-keys_fr.png'
+import kc3KeysEn from '@/assets/img/kc3-keys_en.png'
+import kc3OffersFr from '@/assets/img/kc3-offers_fr.png'
+import kc3OffersEn from '@/assets/img/kc3-offers_en.png'
+import kc3PrevalidationFr from '@/assets/img/kc3-prevalidation_fr.png'
+import kc3PrevalidationEn from '@/assets/img/kc3-prevalidation_en.png'
+import kc3ValidationFr from '@/assets/img/kc3-validation_fr.png'
+import kc3ValidationEn from '@/assets/img/kc3-validation_en.png'
 
-export default defineComponent({
-  nuxtI18n: {
-    paths: {
-      fr: '/kc3',
-      en: '/kc3',
-    },
-  },
-  setup() {
-    const assets: Record<string, LocalizedAsset> = {
-      kc3SafetyEntity: {
-        fr: kc3SafetyEntityFr,
-        en: kc3SafetyEntityEn,
-      },
-      kc3AirSafety: {
-        fr: kc3AirSafetyFr,
-        en: kc3AirSafetyEn,
-      },
-      kc3Keys: {
-        fr: kc3KeysFr,
-        en: kc3KeysEn,
-      },
-      kc3Offers: {
-        fr: kc3OffersFr,
-        en: kc3OffersEn,
-      },
-      kc3Prevalidation: {
-        fr: kc3PrevalidationFr,
-        en: kc3PrevalidationEn,
-      },
-      kc3Validation: {
-        fr: kc3ValidationFr,
-        en: kc3ValidationEn,
-      },
-    };
+defineI18nRoute({
+  paths: {
+    fr: '/kc3',
+    en: '/kc3'
+  }
+})
 
-    return {
-      ...assets,
-    };
+useHead({
+  title: 'EU-AVSEC-CEIV | KC3'
+})
+
+const assets: Record<string, LocalizedAsset> = {
+  kc3SafetyEntity: {
+    fr: kc3SafetyEntityFr,
+    en: kc3SafetyEntityEn
   },
-  head() {
-    return {
-      title: 'EU-AVSEC-CEIV | KC3',
-    };
+  kc3AirSafety: {
+    fr: kc3AirSafetyFr,
+    en: kc3AirSafetyEn
   },
-});
+  kc3Keys: {
+    fr: kc3KeysFr,
+    en: kc3KeysEn
+  },
+  kc3Offers: {
+    fr: kc3OffersFr,
+    en: kc3OffersEn
+  },
+  kc3Prevalidation: {
+    fr: kc3PrevalidationFr,
+    en: kc3PrevalidationEn
+  },
+  kc3Validation: {
+    fr: kc3ValidationFr,
+    en: kc3ValidationEn
+  }
+}
+const locale = useI18n().locale as WritableComputedRef<'fr' | 'en'>
+const localePath = useLocalePath()
 </script>
 
 <template>
@@ -70,18 +64,18 @@ export default defineComponent({
         <h3 class="requirements">{{ $t('kc3.regulationRequirements') }}</h3>
 
         <!-- kc3SafetyEntity -->
-        <img :src="kc3SafetyEntity[$i18n.locale]" :alt="kc3SafetyEntity[$i18n.locale]">
+        <img :src="assets.kc3SafetyEntity[locale]" :alt="assets.kc3SafetyEntity[locale]">
         <i18n path="kc3.p1" tag="p">
           <a
             target="_blank"
             rel="noopener"
             class="font-bold"
-            :href="$i18n.t('links.300/2008')">No 300/2008</a>
+            :href="$t('links.300/2008')">No 300/2008</a>
           <strong>{{ $t('kc3.p1Keywords') }}</strong>
         </i18n>
 
         <!-- kc3AirSafety -->
-        <img :src="kc3AirSafety[$i18n.locale]" :alt="kc3AirSafety[$i18n.locale]">
+        <img :src="assets.kc3AirSafety[locale]" :alt="assets.kc3AirSafety[locale]">
         <i18n path="kc3.p2" tag="p">
           <strong>No 654/2013</strong>
           <strong>No 185/2010</strong>
@@ -93,18 +87,18 @@ export default defineComponent({
           <a
             target="_blank"
             rel="noopener"
-            :href="$i18n.t('links.2015/1998')">{{ $t('kc3.footerLink2') }}</a>
+            :href="$t('links.2015/1998')">{{ $t('kc3.footerLink2') }}</a>
         </i18n>
         <hr class="my-4">
         <h3>{{ $t('kc3.keys') }}</h3>
-        <img class="keys" :src="kc3Keys[$i18n.locale]" :alt="kc3Keys[$i18n.locale]">
+        <img class="keys" :src="assets.kc3Keys[locale]" :alt="assets.kc3Keys[locale]">
       </section>
       <section>
         <h3>{{ $t('kc3.whatWeOffer') }}</h3>
-        <img class="h-20 mx-auto" :src="kc3Offers[$i18n.locale]" :alt="kc3Offers[$i18n.locale]">
+        <img class="h-20 mx-auto" :src="assets.kc3Offers[locale]" :alt="assets.kc3Offers[locale]">
         <hr class="my-6 border-gray-500">
         <!-- Prevalidation -->
-        <img :src="kc3Prevalidation[$i18n.locale]" :alt="kc3Prevalidation[$i18n.locale]">
+        <img :src="assets.kc3Prevalidation[locale]" :alt="assets.kc3Prevalidation[locale]">
         <p class="my-3">{{ $t('kc3.prevalidationPrehamble') }}</p>
         <h4>{{ $t('kc3.whyPrevalidate') }}</h4>
         <p class="my-3">{{ $t('kc3.validationReason') }}</p>
@@ -124,7 +118,7 @@ export default defineComponent({
             <span>{{ $t('kc3.prevalidation.step3') }}</span>
           </li>
         </ul>
-        <img :src="kc3Validation[$i18n.locale]" :alt="kc3Validation[$i18n.locale]">
+        <img :src="assets.kc3Validation[locale]" :alt="assets.kc3Validation[locale]">
         <h4 class="my-3">{{ $t('kc3.howWeProceed') }}</h4>
         <p class="my-3">{{ $t('kc3.validation.2steps') }}</p>
         <ul>

@@ -1,61 +1,54 @@
-<script lang="ts">
-import { defineComponent, ref } from '@nuxtjs/composition-api';
-
+<script setup lang="ts">
 interface LinkItem {
   name: string;
   text: string;
 }
 
-export default defineComponent({
-  name: 'Navbar',
-  setup() {
-    const showOverlay = ref(false);
+const showOverlay = ref(false)
 
-    const links = ref<LinkItem[]>([
-      {
-        name: '/',
-        text: 'home',
-      },
-      {
-        name: '/contact',
-        text: 'contact',
-      },
-      {
-        name: 'news',
-        text: 'news',
-      },
-      {
-        name: 'ACC3',
-        text: 'ACC3',
-      },
-      {
-        name: 'RA3',
-        text: 'RA3',
-      },
-      {
-        name: 'KC3',
-        text: 'KC3',
-      },
-      {
-        name: 'links-regulations',
-        text: 'linksAndRegulations',
-      },
-    ]);
-
-    return {
-      showOverlay,
-      links,
-    };
+const links = ref<LinkItem[]>([
+  {
+    name: '/',
+    text: 'home'
   },
-});
+  {
+    name: '/contact',
+    text: 'contact'
+  },
+  {
+    name: 'news',
+    text: 'news'
+  },
+  {
+    name: 'ACC3',
+    text: 'ACC3'
+  },
+  {
+    name: 'RA3',
+    text: 'RA3'
+  },
+  {
+    name: 'KC3',
+    text: 'KC3'
+  },
+  {
+    name: 'links-regulations',
+    text: 'linksAndRegulations'
+  }
+])
+
+const { locale } = useI18n()
+
+const localePath = useLocalePath()
+const switchLocalePath = useSwitchLocalePath()
 </script>
 
 <template>
   <nav>
     <div class="mobile lg:hidden">
       <div class="bar">
-        <nuxt-link class="text-lg mr-2" :to="switchLocalePath($i18n.locale === 'fr' ? 'en' : 'fr')">
-          {{ $i18n.locale === 'fr' ? 'EN' : 'FR' }}
+        <nuxt-link class="text-lg mr-2" :to="switchLocalePath(locale === 'fr' ? 'en' : 'fr')">
+          {{ locale === 'fr' ? 'EN' : 'FR' }}
         </nuxt-link>
         <button aria-label="Open menu" @click="showOverlay = true">
           <i class="icon-menu" />
@@ -82,8 +75,8 @@ export default defineComponent({
           <nuxt-link :to="localePath(link.name)">{{ $t(link.text) }}</nuxt-link>
         </li>
       </ul>
-      <nuxt-link class="text-lg mr-2" :to="switchLocalePath($i18n.locale === 'fr' ? 'en' : 'fr')">
-        {{ $i18n.locale === 'fr' ? 'EN' : 'FR' }}
+      <nuxt-link class="text-lg mr-2" :to="switchLocalePath(locale === 'fr' ? 'en' : 'fr')">
+        {{ locale === 'fr' ? 'EN' : 'FR' }}
       </nuxt-link>
     </div>
   </nav>

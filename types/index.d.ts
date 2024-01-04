@@ -10,5 +10,6 @@ declare module '*.jpg' {
 }
 
 interface LocalizedAsset {
-  [key: string]: any;
+  fr: string;
+  en: string;
 }

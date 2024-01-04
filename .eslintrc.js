@@ -6,9 +6,6 @@ module.exports = {
   },
   extends: [
     '@nuxtjs/eslint-config-typescript',
-    'plugin:nuxt/recommended',
-    'plugin:import/typescript',
-    'airbnb-base',
   ],
   plugins: [],
   // add your custom rules here
