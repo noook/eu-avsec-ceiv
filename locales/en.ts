@@ -28,10 +28,11 @@ export default {
     EC3: 'https://ksda.ec.europa.eu/public/screen/home',
     IATACEIV: 'https://www.iata.org/en/programs/security/cargo-security/ceiv/',
     'LEX-300/2008': 'http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:02008R0300-20100201&qid=1395671571845&from=EN',
-    'LEX-748/2009': 'https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:02009R0748-20220325&qid=1664382533000&from=EN',
-    'LEX-2015/1998': 'https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:02015R1998-20220701&qid=1629387932871&from=EN',
+    'LEX-748/2009': 'https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:02009R0748-20230424&qid=1704304558475&from=EN',
+    'LEX-2015/1998': 'https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:02015R1998-20230401&qid=1704305020500&from=EN',
     '2020/910': 'https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32020R0910&from=EN',
     '2022/1174': 'https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32022R1174&from=FR',
+    '2023/566': 'https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32023R0566&from=EN',
   },
 
   homepage: {
@@ -195,4 +196,4 @@ export default {
       link2: '{0} {1}',
     },
   },
-} as const;
+} as const
