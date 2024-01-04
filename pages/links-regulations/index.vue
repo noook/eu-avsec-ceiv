@@ -90,7 +90,7 @@ useHead({
                 :href="$t('links.LEX-748/2009')">({{ $t('europeanCommission') }}) N° 748/2009 (M17.pdf)</a>
             </i18n-t>
             <i18n-t scope="global" keypath="linksRegulations.EURLEX.link3" tag="li">
-              <span>2022-07-07</span>
+              <span>2023-03-10</span>
               <a
                 target="_blank"
                 rel="noopener"
