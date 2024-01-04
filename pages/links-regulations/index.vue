@@ -2,14 +2,14 @@
 defineI18nRoute({
   paths: {
     fr: '/liens-et-reglementations',
-    en: '/links-and-regulations'
-  }
+    en: '/links-and-regulations',
+  },
 })
 
 const i18n = useI18n()
 
 useHead({
-  title: `EU-AVSEC-CEIV | ${i18n.t('linksRegulations.title')}`
+  title: `EU-AVSEC-CEIV | ${i18n.t('linksRegulations.title')}`,
 })
 </script>
 
@@ -75,27 +75,27 @@ useHead({
             <li class="mb-2">
               <strong>{{ $t('linksRegulations.consolidatedVersions') }}</strong>
             </li>
-            <i18n path="linksRegulations.EURLEX.link1" tag="li">
+            <i18n-t scope="global" keypath="linksRegulations.EURLEX.link1" tag="li">
               <span>2010-02-01</span>
               <a
                 target="_blank"
                 rel="noopener"
                 :href="$t('links.LEX-300/2008')">({{ $t('europeanCommission') }}) N° 300/2008 (M1.pdf)</a>
-            </i18n>
-            <i18n path="linksRegulations.EURLEX.link2" tag="li">
+            </i18n-t>
+            <i18n-t scope="global" keypath="linksRegulations.EURLEX.link2" tag="li">
               <span>2022-03-25</span>
               <a
                 target="_blank"
                 rel="noopener"
                 :href="$t('links.LEX-748/2009')">({{ $t('europeanCommission') }}) N° 748/2009 (M16.pdf)</a>
-            </i18n>
-            <i18n path="linksRegulations.EURLEX.link3" tag="li">
+            </i18n-t>
+            <i18n-t scope="global" keypath="linksRegulations.EURLEX.link3" tag="li">
               <span>2022-07-07</span>
               <a
                 target="_blank"
                 rel="noopener"
                 :href="$t('links.LEX-2015/1998')">({{ $t('europeanUnion') }}) N° 2015/1998 (M15.pdf)</a>
-            </i18n>
+            </i18n-t>
           </ul>
         </div>
       </section>
@@ -104,13 +104,13 @@ useHead({
         <div>
           <img src="@/assets/img/breaking-news.jpg" alt="latest news">
           <ul>
-            <i18n path="linksRegulations.latestRegulations.link1" tag="li">
+            <i18n-t scope="global" keypath="linksRegulations.latestRegulations.link1" tag="li">
               <span>2022-07-07</span>
               <a
                 target="_blank"
                 rel="noopener"
                 :href="$t('links.2022/1174')">({{ $t('europeanUnion') }}) No 2022/1174 (M15) (2015/1998 M15.pdf)</a>
-            </i18n>
+            </i18n-t>
           </ul>
         </div>
       </section>
@@ -131,7 +131,7 @@ useHead({
 
   h1 {
     @apply text-3xl font-semibold mb-4 tracking-wide;
-    @apply lg:w-max-3/5 mx-auto;
+    @apply lg:max-w-sm mx-auto;
   }
 
   section {
@@ -149,7 +149,7 @@ useHead({
       @apply flex items-start;
 
       > img {
-        @apply w-100px mr-8;
+        @apply w-[100px] mr-8;
       }
     }
   }
