@@ -1,4 +1,4 @@
-import { defineNuxtConfig } from "nuxt/config"
+import { defineNuxtConfig } from 'nuxt/config'
 
 export default defineNuxtConfig({
   // Target: https://go.nuxtjs.dev/config-target
@@ -21,7 +21,6 @@ export default defineNuxtConfig({
     },
   },
   // Global page headers: https://go.nuxtjs.dev/config-head
-  
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
@@ -35,6 +34,7 @@ export default defineNuxtConfig({
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/tailwindcss',
     '@nuxtjs/i18n',
     '@nuxtjs/google-fonts',
   ],
@@ -49,13 +49,11 @@ export default defineNuxtConfig({
       },
     ],
     defaultLocale: 'en',
-    
     langDir: 'locales',
     strategy: 'prefix_except_default',
     // seo: true,
     baseUrl: 'https://eu-avsec-ceiv.org',
   },
-
 
   // i18n: {
   //   locales: [
@@ -82,5 +80,9 @@ export default defineNuxtConfig({
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+
+  experimental: {
+    typedPages: true,
   },
 })

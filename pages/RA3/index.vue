@@ -16,8 +16,8 @@ import ra3SecurityValidationFr from '@/assets/img/ra3-security-validation_fr.png
 defineI18nRoute({
   paths: {
     fr: '/ra3',
-    en: '/ra3'
-  }
+    en: '/ra3',
+  },
 })
 
 const i18n = useI18n()
@@ -25,34 +25,34 @@ const locale = useI18n().locale as WritableComputedRef<'fr' | 'en'>
 const localePath = useLocalePath()
 
 useHead({
-  title: `EU-AVSEC-CEIV | ${i18n.t('RA3')}`
+  title: `EU-AVSEC-CEIV | ${i18n.t('RA3')}`,
 })
 
 const assets: Record<string, LocalizedAsset> = {
   ra3Keys: {
     fr: ra3KeysFr,
-    en: ra3KeysEn
+    en: ra3KeysEn,
   },
   ra3Offers: {
     fr: ra3OffersFr,
-    en: ra3OffersEn
+    en: ra3OffersEn,
   },
   ra3Prevalidation: {
     fr: ra3PrevalidationFr,
-    en: ra3PrevalidationEn
+    en: ra3PrevalidationEn,
   },
   ra3Validation: {
     fr: ra3ValidationFr,
-    en: ra3ValidationEn
+    en: ra3ValidationEn,
   },
   ra3SecurityProgram: {
     fr: ra3SecurityProgramFr,
-    en: ra3SecurityProgramEn
+    en: ra3SecurityProgramEn,
   },
   ra3SecurityValidation: {
     fr: ra3SecurityValidationFr,
-    en: ra3SecurityValidationEn
-  }
+    en: ra3SecurityValidationEn,
+  },
 }
 </script>
 
@@ -67,30 +67,30 @@ const assets: Record<string, LocalizedAsset> = {
 
         <!-- ra3SecurityProgram -->
         <img :src="assets.ra3SecurityProgram[locale]" :alt="assets.ra3SecurityProgram[locale]">
-        <i18n path="ra3.p1" tag="p">
+        <i18n-t scope="global" keypath="ra3.p1" tag="p">
           <a
             target="_blank"
             rel="noopener"
             href="https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CONSLEG:2008R0300:20100201:EN:PDF"
             class="font-bold">No 300/2008</a>
           <strong>{{ $t('ra3.p1Keywords') }}</strong>
-        </i18n>
+        </i18n-t>
 
         <!-- ra3SecurityValidation -->
         <img :src="assets.ra3SecurityValidation[locale]" :alt="assets.ra3SecurityValidation[locale]">
-        <i18n path="ra3.p2" tag="p">
+        <i18n-t scope="global" keypath="ra3.p2" tag="p">
           <strong>No 654/2013</strong>
           <strong>No 185/2010</strong>
           <strong>{{ $t('ra3.p2Keywords') }}</strong>
-        </i18n>
+        </i18n-t>
 
-        <i18n path="ra3.footer" tag="p" class="text-center text-red-600">
+        <i18n-t scope="global" keypath="ra3.footer" tag="p" class="text-center text-red-600">
           <strong>{{ $t('ra3.footerLink') }}</strong>
           <a
             target="_blank"
             rel="noopener"
             :href="$t('links.2015/1998')">{{ $t('ra3.footerLink2') }}</a>
-        </i18n>
+        </i18n-t>
         <hr class="my-4">
         <h3>{{ $t('ra3.keys') }}</h3>
         <img class="keys" :src="assets.ra3Keys[locale]" :alt="assets.ra3Keys[locale]">
@@ -120,13 +120,13 @@ const assets: Record<string, LocalizedAsset> = {
             <span>{{ $t('ra3.prevalidation.step3') }}</span>
           </li>
         </ul>
-        <i18n path="ra3.takeOurSurvey" tag="p" class="my-2">
+        <i18n-t scope="global" keypath="ra3.takeOurSurvey" tag="p" class="my-2">
           <a
             class="text-blue-800 underline font-semibold"
             target="_blank"
             rel="noopener"
             href="https://docs.google.com/forms/d/e/1FAIpQLSdrzXWQfPvYzwC6t5995JgKpiLerJ-VyTUsbaGXzDauhbQuhg/viewform">{{ $t('ra3.formText') }}</a>
-        </i18n>
+        </i18n-t>
         <img :src="assets.ra3Validation[locale]" :alt="assets.ra3Validation[locale]">
         <h4 class="my-3">{{ $t('ra3.howWeProceed') }}</h4>
         <p class="my-3">{{ $t('ra3.validation.2steps') }}</p>
@@ -184,7 +184,7 @@ const assets: Record<string, LocalizedAsset> = {
 
   h1 {
     @apply text-3xl font-semibold mb-4 tracking-wide;
-    @apply lg:w-max-3/5 mx-auto;
+    @apply lg:max-w-sm mx-auto;
   }
 
   h3 {

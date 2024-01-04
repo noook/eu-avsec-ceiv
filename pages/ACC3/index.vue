@@ -18,43 +18,43 @@ import specificSecurityProgramEn from '@/assets/img/specific-security-program_en
 const assets = ref<Record<string, LocalizedAsset>>({
   acc3Keys: {
     fr: acc3KeysFr,
-    en: acc3KeysEn
+    en: acc3KeysEn,
   },
   acc3Offers: {
     fr: acc3OffersFr,
-    en: acc3OffersEn
+    en: acc3OffersEn,
   },
   acc3Prevalidation: {
     fr: acc3PrevalidationFr,
-    en: acc3PrevalidationEn
+    en: acc3PrevalidationEn,
   },
   acc3Validation: {
     fr: acc3ValidationFr,
-    en: acc3ValidationEn
+    en: acc3ValidationEn,
   },
   aviationSecurityValidation: {
     fr: aviationSecurityValidationFr,
-    en: aviationSecurityValidationEn
+    en: aviationSecurityValidationEn,
   },
   carrierSecurityProgram: {
     fr: carrierSecurityProgramFr,
-    en: carrierSecurityProgramEn
+    en: carrierSecurityProgramEn,
   },
   specificSecurityProgram: {
     fr: specificSecurityProgramFr,
-    en: specificSecurityProgramEn
-  }
+    en: specificSecurityProgramEn,
+  },
 })
 
 defineI18nRoute({
   paths: {
     fr: '/acc3',
-    en: '/acc3'
-  }
+    en: '/acc3',
+  },
 })
 
 useHead({
-  title: 'EU-AVSEC-CEIV | ACC3'
+  title: 'EU-AVSEC-CEIV | ACC3',
 })
 
 const locale = useI18n().locale as WritableComputedRef<'fr' | 'en'>
@@ -72,33 +72,33 @@ const localePath = useLocalePath()
 
         <!-- carrierSecurityProgram -->
         <img :src="assets.carrierSecurityProgram[locale]" :alt="assets.carrierSecurityProgram[locale]">
-        <i18n path="acc3.p1" tag="p">
+        <i18n-t scope="global" keypath="acc3.p1" tag="p">
           <a
             target="_blank"
             rel="noopener"
             :href="$t('links.300/2008')">No 300/2008</a>
           <strong>{{ $t('acc3.p1Keywords') }}</strong>
-        </i18n>
+        </i18n-t>
 
         <!-- specificSecurityProgram -->
         <img :src="assets.specificSecurityProgram[locale]" :alt="assets.specificSecurityProgram[locale]">
-        <i18n path="acc3.p2" tag="p">
+        <i18n-t scope="global" keypath="acc3.p2" tag="p">
           <strong>No 859/2011</strong>
           <strong>{{ $t('acc3.6gAttachment') }}</strong>
-        </i18n>
+        </i18n-t>
 
         <!-- aviationSecurityValidation -->
         <img :src="assets.aviationSecurityValidation[locale]" :alt="assets.aviationSecurityValidation[locale]">
-        <i18n path="acc3.p3" tag="p">
+        <i18n-t scope="global" keypath="acc3.p3" tag="p">
           <strong>No 1082/2012</strong>
           <strong>No 185/2010</strong>
           <strong>{{ $t('acc3.p3Keywords') }}</strong>
-        </i18n>
+        </i18n-t>
 
-        <i18n path="acc3.footer" tag="p" class="text-center text-red-600">
+        <i18n-t scope="global" keypath="acc3.footer" tag="p" class="text-center text-red-600">
           <strong>{{ $t('acc3.footerLink') }}</strong>
           <strong>{{ $t('acc3.footerLink2') }}</strong>
-        </i18n>
+        </i18n-t>
         <hr class="my-4">
         <h3>{{ $t('acc3.keys') }}</h3>
         <img class="keys" :src="assets.acc3Keys[locale]" :alt="assets.acc3Keys[locale]">
@@ -128,13 +128,13 @@ const localePath = useLocalePath()
             <span>{{ $t('acc3.prevalidation.step3') }}</span>
           </li>
         </ul>
-        <i18n path="acc3.takeOurSurvey" tag="p" class="my-2">
+        <i18n-t scope="global" keypath="acc3.takeOurSurvey" tag="p" class="my-2">
           <a
             class="text-blue-800 underline font-semibold"
             target="_blank"
             rel="noopener"
             href="https://docs.google.com/forms/d/e/1FAIpQLScJ8Dnsh0H3OE6AbXcyJkFM30kpWSHy2tnN84XcETtpIh-fQw/viewform">{{ $t('acc3.formText') }}</a>
-        </i18n>
+        </i18n-t>
         <img :src="assets.acc3Validation[locale]" :alt="assets.acc3Validation[locale]">
         <h4 class="my-3">{{ $t('acc3.howWeProceed') }}</h4>
         <p class="my-3">{{ $t('acc3.validation.3steps') }}</p>
@@ -196,7 +196,7 @@ const localePath = useLocalePath()
 
   h1 {
     @apply text-3xl font-semibold mb-4 tracking-wide;
-    @apply lg:w-max-3/5 mx-auto;
+    @apply lg:max-w-sm mx-auto;
   }
 
   h3 {

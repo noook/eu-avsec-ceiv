@@ -4,12 +4,12 @@ import teamMembers from '@/assets/team'
 defineI18nRoute({
   paths: {
     en: '/contact',
-    fr: '/contact'
-  }
+    fr: '/contact',
+  },
 })
 
 useHead({
-  title: 'EU-AVSEC-CEIV | Contact'
+  title: 'EU-AVSEC-CEIV | Contact',
 })
 </script>
 
@@ -40,7 +40,7 @@ useHead({
 <style lang="scss" scoped>
 .about-us {
   > h1 {
-    @apply my-6 mx-6 text-xl text-blue-900 font-font-semibold text-center uppercase;
+    @apply my-6 mx-6 text-xl text-blue-900 font-semibold text-center uppercase;
     @apply md:text-2xl md:w-2/3 md:mx-auto;
   }
 

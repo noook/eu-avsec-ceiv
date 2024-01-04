@@ -4,14 +4,14 @@ import articles, { type NewsEntry } from '@/assets/news'
 defineI18nRoute({
   paths: {
     fr: '/actus',
-    en: '/news'
-  }
+    en: '/news',
+  },
 })
 
 const i18n = useI18n()
 
 useHead({
-  title: `EU-AVSEC-CEIV | ${i18n.t('news')}`
+  title: `EU-AVSEC-CEIV | ${i18n.t('news')}`,
 })
 
 const sections = computed(() => {
@@ -36,7 +36,7 @@ const sections = computed(() => {
 
       return {
         period: new Date(year, month),
-        items
+        items,
       }
     })
 })
@@ -69,7 +69,7 @@ const sections = computed(() => {
 <style lang="scss" scoped>
 .news {
   > h1 {
-    @apply my-6 mx-6 text-xl text-blue-900 font-font-semibold text-center uppercase;
+    @apply my-6 mx-6 text-xl text-blue-900 font-semibold text-center uppercase;
     @apply md:text-2xl md:w-2/3 md:mx-auto;
   }
 

@@ -12,23 +12,30 @@ import ourValuesEn from '@/assets/img/our-values_en.png'
 const assets: Record<string, LocalizedAsset> = {
   safetyEvolves: {
     fr: safetyEvolvesFr,
-    en: safetyEvolvesEn
+    en: safetyEvolvesEn,
   },
   ourMission: {
     fr: ourMissionFr,
-    en: ourMissionEn
+    en: ourMissionEn,
   },
   ourVision: {
     fr: ourVisionFr,
-    en: ourVisionEn
+    en: ourVisionEn,
   },
   ourValues: {
     fr: ourValuesFr,
-    en: ourValuesEn
-  }
+    en: ourValuesEn,
+  },
 }
 
 const locale = useI18n().locale as WritableComputedRef<'fr' | 'en'>
+
+defineI18nRoute({
+  paths: {
+    fr: '/',
+    en: '/',
+  },
+})
 </script>
 
 <template>
@@ -43,24 +50,24 @@ const locale = useI18n().locale as WritableComputedRef<'fr' | 'en'>
     <hr>
     <main>
       <section>
-        <i18n path="homepage.target" tag="small">
+        <i18n-t scope="global" keypath="homepage.target" tag="small">
           <strong>{{ $t('ACC3') }}, {{ $t('RA3') }}, {{ $t('or') }} {{ $t('KC3') }}</strong>
-        </i18n>
+        </i18n-t>
         <h3>{{ $t('homepage.regulationImplementation') }}</h3>
-        <i18n path="homepage.p1.text" tag="p">
+        <i18n-t scope="global" keypath="homepage.p1.text" tag="p">
           <a target="_blank" rel="noopener" :href="$t('links.2015/1998')">2015/1998</a>
           <strong>{{ $t('homepage.p1.date') }}</strong>
           <span class="text-red-600 italic">{{ $t('homepage.p1.effectiveDate') }}</span>
-        </i18n>
+        </i18n-t>
         <hr>
-        <i18n path="homepage.p2.text" tag="p">
+        <i18n-t scope="global" keypath="homepage.p2.text" tag="p">
           <strong>{{ $t('homepage.p2.effectiveDate') }}</strong>
           <strong>{{ $t('homepage.p2.accent') }}</strong>
-        </i18n>
-        <i18n path="homepage.p3.text" tag="p">
+        </i18n-t>
+        <i18n-t scope="global" keypath="homepage.p3.text" tag="p">
           <strong>{{ $t('homepage.p3.ra3') }}</strong>
           <strong>{{ $t('homepage.p3.kc3') }}</strong>
-        </i18n>
+        </i18n-t>
         <img :src="assets.safetyEvolves[locale]" :alt="$t('homepage.aviationSafetyEvolves')">
         <p class="text-lg text-right font-semibold tracking-wider">
           {{ $t('homepage.areYouReady') }}
@@ -128,7 +135,8 @@ const locale = useI18n().locale as WritableComputedRef<'fr' | 'en'>
 
   h1 {
     @apply text-2xl font-semibold mb-4 tracking-wide;
-    @apply lg:w-max-3/5 mx-auto;
+    @apply mx-auto;
+    max-width: 60%;
   }
 
   h2 {

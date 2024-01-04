@@ -9,32 +9,32 @@ const showOverlay = ref(false)
 const links = ref<LinkItem[]>([
   {
     name: '/',
-    text: 'home'
+    text: 'home',
   },
   {
     name: '/contact',
-    text: 'contact'
+    text: 'contact',
   },
   {
     name: 'news',
-    text: 'news'
+    text: 'news',
   },
   {
     name: 'ACC3',
-    text: 'ACC3'
+    text: 'ACC3',
   },
   {
     name: 'RA3',
-    text: 'RA3'
+    text: 'RA3',
   },
   {
     name: 'KC3',
-    text: 'KC3'
+    text: 'KC3',
   },
   {
-    name: 'links-regulations',
-    text: 'linksAndRegulations'
-  }
+    name: 'links-and-regulations',
+    text: 'linksAndRegulations',
+  },
 ])
 
 const { locale } = useI18n()
@@ -47,9 +47,9 @@ const switchLocalePath = useSwitchLocalePath()
   <nav>
     <div class="mobile lg:hidden">
       <div class="bar">
-        <nuxt-link class="text-lg mr-2" :to="switchLocalePath(locale === 'fr' ? 'en' : 'fr')">
+        <NuxtLink class="text-lg mr-2" :to="switchLocalePath(locale === 'fr' ? 'en' : 'fr')">
           {{ locale === 'fr' ? 'EN' : 'FR' }}
-        </nuxt-link>
+        </NuxtLink>
         <button aria-label="Open menu" @click="showOverlay = true">
           <i class="icon-menu" />
         </button>
@@ -63,7 +63,13 @@ const switchLocalePath = useSwitchLocalePath()
           </div>
           <ul>
             <li v-for="link in links" :key="link.name" @click="showOverlay = false">
-              <nuxt-link :to="localePath(link.name)">{{ $t(link.text) }}</nuxt-link>
+              <NuxtLink
+                class="font-medium"
+                :to="localePath({
+                  path: link.name
+                })">
+                {{ $t(link.text) }}
+              </NuxtLink>
             </li>
           </ul>
         </div>
@@ -72,12 +78,18 @@ const switchLocalePath = useSwitchLocalePath()
     <div class="desktop">
       <ul class="flex items-center">
         <li v-for="link in links" :key="link.name">
-          <nuxt-link :to="localePath(link.name)">{{ $t(link.text) }}</nuxt-link>
+          <NuxtLink
+            class="font-medium"
+            :to="localePath({
+              path: link.name
+            })">
+            {{ $t(link.text) }}
+          </NuxtLink>
         </li>
       </ul>
-      <nuxt-link class="text-lg mr-2" :to="switchLocalePath(locale === 'fr' ? 'en' : 'fr')">
+      <NuxtLink class="text-lg mr-2" :to="switchLocalePath(locale === 'fr' ? 'en' : 'fr')">
         {{ locale === 'fr' ? 'EN' : 'FR' }}
-      </nuxt-link>
+      </NuxtLink>
     </div>
   </nav>
 </template>
@@ -95,12 +107,12 @@ nav {
   a {
     @apply mr-8;
 
-    &.nuxt-link-exact-active {
+    &.router-link-exact-active {
       @apply relative;
 
       &:after {
         content: '';
-        @apply absolute w-8 mt-1 h-2px bg-white;
+        @apply absolute w-8 mt-1 h-0.5 bg-white;
         @apply top-full left-1/2 transform -translate-x-1/2;
       }
     }
@@ -135,9 +147,9 @@ nav {
       @apply flex justify-center;
 
       a {
-        @apply py-2;
+        @apply py-2 font-medium;
 
-        &.nuxt-link-exact-active {
+        &.router-link-exact-active {
           @apply font-semibold;
         }
       }

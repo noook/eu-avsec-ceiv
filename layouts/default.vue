@@ -1,13 +1,13 @@
 <script setup lang="ts">
 const head = useLocaleHead({
-  addSeoAttributes: true
+  addSeoAttributes: true,
 })
 
 const i18n = useI18n()
 
 useHead({
   htmlAttrs: {
-    ...head.value.htmlAttrs
+    ...head.value.htmlAttrs,
   },
   meta: [
     {
@@ -16,13 +16,13 @@ useHead({
       content: `
         ${i18n.t('homepage.welcome')}
         ${i18n.t('homepage.target', [`${i18n.t('ACC3')} ${i18n.t('RA3')} ${i18n.t('or')} ${i18n.t('KC3')}`])}
-      `
+      `,
     },
-    ...head.value.meta ?? []
+    ...head.value.meta ?? [],
   ],
   link: [
-    ...head.value.link ?? []
-  ]
+    ...head.value.link ?? [],
+  ],
 })
 </script>
 
@@ -30,7 +30,7 @@ useHead({
   <div id="app">
     <Navbar />
     <div class="flex justify-center">
-      <Nuxt id="nuxt" />
+      <slot />
     </div>
     <footer>
       Copyright &copy; 2013-{{ new Date().getFullYear() }} EU-AVSEC-CEIV.ORG
@@ -38,7 +38,7 @@ useHead({
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 html {
   font-family:
     'Source Sans Pro',
@@ -62,8 +62,8 @@ html {
   @apply relative;
 }
 
-#nuxt {
-  @apply mt-14 bg-gray-50 w-full;
+#app {
+  @apply mt-14 bg-gray-50 w-full mx-auto;
   max-width: 1200px;
 }
 

@@ -20,6 +20,7 @@ module.exports = {
     '@typescript-eslint/no-unused-vars': ['error'],
     'no-undef': 'off',
     'max-len': 'off',
+    'comma-dangle': ['error', 'always-multiline'],
   },
   overrides: [
     {
@@ -37,4 +38,4 @@ module.exports = {
       typescript: {},
     },
   },
-};
+}

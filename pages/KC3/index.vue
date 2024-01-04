@@ -16,39 +16,39 @@ import kc3ValidationEn from '@/assets/img/kc3-validation_en.png'
 defineI18nRoute({
   paths: {
     fr: '/kc3',
-    en: '/kc3'
-  }
+    en: '/kc3',
+  },
 })
 
 useHead({
-  title: 'EU-AVSEC-CEIV | KC3'
+  title: 'EU-AVSEC-CEIV | KC3',
 })
 
 const assets: Record<string, LocalizedAsset> = {
   kc3SafetyEntity: {
     fr: kc3SafetyEntityFr,
-    en: kc3SafetyEntityEn
+    en: kc3SafetyEntityEn,
   },
   kc3AirSafety: {
     fr: kc3AirSafetyFr,
-    en: kc3AirSafetyEn
+    en: kc3AirSafetyEn,
   },
   kc3Keys: {
     fr: kc3KeysFr,
-    en: kc3KeysEn
+    en: kc3KeysEn,
   },
   kc3Offers: {
     fr: kc3OffersFr,
-    en: kc3OffersEn
+    en: kc3OffersEn,
   },
   kc3Prevalidation: {
     fr: kc3PrevalidationFr,
-    en: kc3PrevalidationEn
+    en: kc3PrevalidationEn,
   },
   kc3Validation: {
     fr: kc3ValidationFr,
-    en: kc3ValidationEn
-  }
+    en: kc3ValidationEn,
+  },
 }
 const locale = useI18n().locale as WritableComputedRef<'fr' | 'en'>
 const localePath = useLocalePath()
@@ -65,30 +65,30 @@ const localePath = useLocalePath()
 
         <!-- kc3SafetyEntity -->
         <img :src="assets.kc3SafetyEntity[locale]" :alt="assets.kc3SafetyEntity[locale]">
-        <i18n path="kc3.p1" tag="p">
+        <i18n-t scope="global" keypath="kc3.p1" tag="p">
           <a
             target="_blank"
             rel="noopener"
             class="font-bold"
             :href="$t('links.300/2008')">No 300/2008</a>
           <strong>{{ $t('kc3.p1Keywords') }}</strong>
-        </i18n>
+        </i18n-t>
 
         <!-- kc3AirSafety -->
         <img :src="assets.kc3AirSafety[locale]" :alt="assets.kc3AirSafety[locale]">
-        <i18n path="kc3.p2" tag="p">
+        <i18n-t scope="global" keypath="kc3.p2" tag="p">
           <strong>No 654/2013</strong>
           <strong>No 185/2010</strong>
           <strong>{{ $t('kc3.p2Keywords') }}</strong>
-        </i18n>
+        </i18n-t>
 
-        <i18n path="kc3.footer" tag="p" class="text-center text-red-600">
+        <i18n-t scope="global" keypath="kc3.footer" tag="p" class="text-center text-red-600">
           <strong>{{ $t('kc3.footerLink') }}</strong>
           <a
             target="_blank"
             rel="noopener"
             :href="$t('links.2015/1998')">{{ $t('kc3.footerLink2') }}</a>
-        </i18n>
+        </i18n-t>
         <hr class="my-4">
         <h3>{{ $t('kc3.keys') }}</h3>
         <img class="keys" :src="assets.kc3Keys[locale]" :alt="assets.kc3Keys[locale]">
@@ -175,7 +175,7 @@ const localePath = useLocalePath()
 
   h1 {
     @apply text-3xl font-semibold mb-4 tracking-wide;
-    @apply lg:w-max-3/5 mx-auto;
+    @apply lg:max-w-sm mx-auto;
   }
 
   h3 {
