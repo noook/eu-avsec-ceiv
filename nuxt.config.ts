@@ -50,7 +50,6 @@ export default defineNuxtConfig({
       },
     ],
     defaultLocale: 'en',
-    langDir: 'locales',
     strategy: 'prefix_except_default',
     // seo: true,
     baseUrl: 'https://eu-avsec-ceiv.org',
