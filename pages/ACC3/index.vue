@@ -71,7 +71,7 @@ const localePath = useLocalePath()
         <h3 class="requirements">{{ $t('acc3.regulationRequirements') }}</h3>
 
         <!-- carrierSecurityProgram -->
-        <img :src="assets.carrierSecurityProgram[locale]" :alt="assets.carrierSecurityProgram[locale]">
+        <img :src="assets.carrierSecurityProgram![locale]" :alt="assets.carrierSecurityProgram![locale]">
         <i18n-t scope="global" keypath="acc3.p1" tag="p">
           <a
             target="_blank"
@@ -81,14 +81,14 @@ const localePath = useLocalePath()
         </i18n-t>
 
         <!-- specificSecurityProgram -->
-        <img :src="assets.specificSecurityProgram[locale]" :alt="assets.specificSecurityProgram[locale]">
+        <img :src="assets.specificSecurityProgram![locale]" :alt="assets.specificSecurityProgram![locale]">
         <i18n-t scope="global" keypath="acc3.p2" tag="p">
           <strong>No 859/2011</strong>
           <strong>{{ $t('acc3.6gAttachment') }}</strong>
         </i18n-t>
 
         <!-- aviationSecurityValidation -->
-        <img :src="assets.aviationSecurityValidation[locale]" :alt="assets.aviationSecurityValidation[locale]">
+        <img :src="assets.aviationSecurityValidation![locale]" :alt="assets.aviationSecurityValidation![locale]">
         <i18n-t scope="global" keypath="acc3.p3" tag="p">
           <strong>No 1082/2012</strong>
           <strong>No 185/2010</strong>
@@ -101,14 +101,14 @@ const localePath = useLocalePath()
         </i18n-t>
         <hr class="my-4">
         <h3>{{ $t('acc3.keys') }}</h3>
-        <img class="keys" :src="assets.acc3Keys[locale]" :alt="assets.acc3Keys[locale]">
+        <img class="keys" :src="assets.acc3Keys![locale]" :alt="assets.acc3Keys![locale]">
       </section>
       <section>
         <h3>{{ $t('acc3.whatWeOffer') }}</h3>
-        <img class="h-20 mx-auto" :src="assets.acc3Offers[locale]" :alt="assets.acc3Offers[locale]">
+        <img class="h-20 mx-auto" :src="assets.acc3Offers![locale]" :alt="assets.acc3Offers![locale]">
         <hr class="my-6 border-gray-500">
         <!-- Prevalidation -->
-        <img :src="assets.acc3Prevalidation[locale]" :alt="assets.acc3Prevalidation[locale]">
+        <img :src="assets.acc3Prevalidation![locale]" :alt="assets.acc3Prevalidation![locale]">
         <p class="my-3">{{ $t('acc3.prevalidationPrehamble') }}</p>
         <h4>{{ $t('acc3.whyPrevalidate') }}</h4>
         <p class="my-3">{{ $t('acc3.validationReason') }}</p>
@@ -135,7 +135,7 @@ const localePath = useLocalePath()
             rel="noopener"
             href="https://docs.google.com/forms/d/e/1FAIpQLScJ8Dnsh0H3OE6AbXcyJkFM30kpWSHy2tnN84XcETtpIh-fQw/viewform">{{ $t('acc3.formText') }}</a>
         </i18n-t>
-        <img :src="assets.acc3Validation[locale]" :alt="assets.acc3Validation[locale]">
+        <img :src="assets.acc3Validation![locale]" :alt="assets.acc3Validation![locale]">
         <h4 class="my-3">{{ $t('acc3.howWeProceed') }}</h4>
         <p class="my-3">{{ $t('acc3.validation.3steps') }}</p>
         <ul>
@@ -152,7 +152,7 @@ const localePath = useLocalePath()
             <span>{{ $t('acc3.validation.step3') }}</span>
           </li>
         </ul>
-        <nuxt-link :to="localePath({ name: 'contact' })">{{ $t('contactUs') }}</nuxt-link>
+        <nuxt-link :to="$localePath('contact')">{{ $t('contactUs') }}</nuxt-link>
       </section>
     </main>
   </div>

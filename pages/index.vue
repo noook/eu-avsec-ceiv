@@ -68,7 +68,7 @@ defineI18nRoute({
           <strong>{{ $t('homepage.p3.ra3') }}</strong>
           <strong>{{ $t('homepage.p3.kc3') }}</strong>
         </i18n-t>
-        <img :src="assets.safetyEvolves[locale]" :alt="$t('homepage.aviationSafetyEvolves')">
+        <img :src="assets.safetyEvolves![locale]" :alt="$t('homepage.aviationSafetyEvolves')">
         <p class="text-lg text-right font-semibold tracking-wider">
           {{ $t('homepage.areYouReady') }}
         </p>
@@ -81,11 +81,11 @@ defineI18nRoute({
       </section>
       <hr class="lg:hidden border-warm-gray-300">
       <section>
-        <img :src="assets.ourMission[locale]" :alt="$t('homepage.ourMission')">
+        <img :src="assets.ourMission![locale]" :alt="$t('homepage.ourMission')">
         <p>{{ $t('homepage.ourMissionText') }}</p>
-        <img :src="assets.ourVision[locale]" :alt="$t('homepage.ourVision')">
+        <img :src="assets.ourVision![locale]" :alt="$t('homepage.ourVision')">
         <p>{{ $t('homepage.ourVisionText') }}</p>
-        <img :src="assets.ourValues[locale]" :alt="$t('homepage.ourValues')">
+        <img :src="assets.ourValues![locale]" :alt="$t('homepage.ourValues')">
         <ul>
           <li>
             <h4>{{ $t('homepage.integrity') }}</h4>

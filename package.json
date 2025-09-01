@@ -11,8 +11,8 @@
     "lint": "yarn lint:js"
   },
   "dependencies": {
-    "@nuxtjs/i18n": "^8.0.0",
-    "nuxt": "^3.9.0"
+    "@nuxtjs/i18n": "^10.0.6",
+    "nuxt": "4.0.3"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
@@ -23,7 +23,7 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-import-resolver-typescript": "^3.6.0",
     "eslint-plugin-import": "^2.29.1",
-    "sass": "1.69.7",
-    "vue": "3.4.5"
-  }
+    "vue": "3.5.20"
+  },
+  "packageManager": "pnpm@10.14.0+sha512.ad27a79641b49c3e481a16a805baa71817a04bbe06a38d17e60e2eaee83f6a146c6a688125f5792e48dd5ba30e7da52a5cda4c3992b9ccf333f9ce223af84748"
 }

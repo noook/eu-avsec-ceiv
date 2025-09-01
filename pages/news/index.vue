@@ -48,13 +48,13 @@ const sections = computed(() => {
     <h1>News</h1>
     <main>
       <section v-for="(section, idx) in sections" :key="idx">
-        <h2>{{ section.period.toLocaleString($i18n.locale, { month: 'long' }) }} {{ section.period.getFullYear() }}</h2>
+        <h2>{{ section.period.toLocaleString(i18n.locale.value, { month: 'long' }) }} {{ section.period.getFullYear() }}</h2>
         <article v-for="(article, articleIdx) in section.items" :key="articleIdx">
           <div class="content">
-            <h3>{{ article.name[$i18n.locale] }}</h3>
-            <h4>{{ article.title[$i18n.locale] }}</h4>
+            <h3>{{ article.name[i18n.locale.value] }}</h3>
+            <h4>{{ article.title[i18n.locale.value] }}</h4>
             <img v-if="article.illustration" :src="article.illustration.src" :alt="article.illustration.alt">
-            <p>{{ article.desc[$i18n.locale] }} <a v-if="article.readMore" target="_blank" rel="noopener" :href="article.readMore">{{ $t('readMore') }}...</a></p>
+            <p>{{ article.desc[i18n.locale.value] }} <a v-if="article.readMore" target="_blank" rel="noopener" :href="article.readMore">{{ $t('readMore') }}...</a></p>
             <div v-if="article.links" class="links">
               <a v-for="(link, linkIdx) in article.links" :key="linkIdx" target="_blank" rel="noopener" :href="link.link">{{ link.text }}</a>
             </div>

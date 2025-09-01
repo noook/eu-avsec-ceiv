@@ -2,6 +2,7 @@ import { defineNuxtConfig } from 'nuxt/config'
 
 export default defineNuxtConfig({
   // Target: https://go.nuxtjs.dev/config-target
+  ssr: false,
 
   app: {
     head: {
@@ -12,7 +13,7 @@ export default defineNuxtConfig({
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { hid: 'description', name: 'description', content: '' },
+        { name: 'description', content: '' },
         { property: 'og:type', content: 'website' },
       ],
       link: [
@@ -42,10 +43,10 @@ export default defineNuxtConfig({
   i18n: {
     locales: [
       {
-        code: 'en', iso: 'en-US', file: 'en.ts', isCatchallLocale: true,
+        code: 'en', language: 'en-US', file: 'en.ts', isCatchallLocale: true,
       },
       {
-        code: 'fr', iso: 'fr-FR', file: 'fr.ts',
+        code: 'fr', language: 'fr-FR', file: 'fr.ts',
       },
     ],
     defaultLocale: 'en',
@@ -54,22 +55,7 @@ export default defineNuxtConfig({
     // seo: true,
     baseUrl: 'https://eu-avsec-ceiv.org',
   },
-
-  // i18n: {
-  //   locales: [
-  //     {
-  //       code: 'en', iso: 'en-US', file: 'en.ts', isCatchallLocale: true,
-  //     },
-  //     {
-  //       code: 'fr', iso: 'fr-FR', file: 'fr.ts',
-  //     },
-  //   ],
-  //   defaultLocale: 'en',
-  //   langDir: '~/locales/',
-  //   strategy: 'prefix_except_default',
-  //   seo: true,
-  //   baseUrl: 'https://eu-avsec-ceiv.org',
-  // },
+  compatibilityDate: '2025-09-01',
 
   googleFonts: {
     families: {
