@@ -90,11 +90,11 @@ useHead({
                 :href="$t('links.LEX-748/2009')">({{ $t('europeanCommission') }}) N° 748/2009 (M17.pdf)</a>
             </i18n-t>
             <i18n-t scope="global" keypath="linksRegulations.EURLEX.link3" tag="li">
-              <span>2023-03-10</span>
+              <span>2025-05-21</span>
               <a
                 target="_blank"
                 rel="noopener"
-                :href="$t('links.LEX-2015/1998')">({{ $t('europeanUnion') }}) N° 2015/1998 (M16.pdf)</a>
+                :href="$t('links.LEX-2015/1998')">({{ $t('europeanUnion') }}) N° 2015/1998 (M19.pdf)</a>
             </i18n-t>
           </ul>
         </div>
@@ -105,11 +105,11 @@ useHead({
           <img src="@/assets/img/breaking-news.jpg" alt="latest news">
           <ul>
             <i18n-t scope="global" keypath="linksRegulations.latestRegulations.link2" tag="li">
-              <span>2023-03-10</span>
+              <span>2025-05-19</span>
               <a
                 target="_blank"
                 rel="noopener"
-                :href="$t('links.2023/566')">({{ $t('europeanUnion') }}) No 2023/566 (M16) (2023/566 M16.pdf)</a>
+                :href="$t('links.2025/920')">({{ $t('europeanUnion') }}) No 2025/920 M19.pdf</a>
             </i18n-t>
           </ul>
         </div>
