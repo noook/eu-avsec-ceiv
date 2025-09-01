@@ -21,7 +21,7 @@ export default {
   },
 
   links: {
-    '2015/1998': 'https://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:02015R1998-20250521&qid=1756652603281',
+    '2015/1998': 'https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:02015R1998-20160229&rid=1',
     '300/2008': 'http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CONSLEG:2008R0300:20100201:EN:PDF',
     EC1: 'http://ec.europa.eu/transport/modes/air/security/cargo-mail/air-carriers_en.htm',
     EC2: 'http://ec.europa.eu/transport/modes/air/security/cargo-mail/entities_en.htm',
@@ -29,7 +29,7 @@ export default {
     IATACEIV: 'https://www.iata.org/en/training/courses/acc3-aviation-security-independent-validator/sec021veen02/en/',
     'LEX-300/2008': 'http://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:02008R0300-20100201&rid=1',
     'LEX-748/2009': 'https://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:02009R0748-20230424&qid=1704304558475&from=EN',
-    'LEX-2015/1998': 'https://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:02015R1998-20230401&qid=1704305020500&from=EN',
+    'LEX-2015/1998': 'https://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:02015R1998-20250521&qid=1756652603281',
     '2020/910': 'https://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:32019R0103&from=FR',
     '2022/1174': 'https://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:32022R1174&from=FR',
     '2025/920': 'https://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=OJ:L_202500920',
