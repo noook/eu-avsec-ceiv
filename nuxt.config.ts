@@ -2,7 +2,7 @@ import { defineNuxtConfig } from 'nuxt/config'
 
 export default defineNuxtConfig({
   // Target: https://go.nuxtjs.dev/config-target
-  ssr: false,
+  ssr: true,
 
   app: {
     head: {
