@@ -28,7 +28,7 @@ export default {
     EC3: 'https://ksda.ec.europa.eu/public/screen/home',
     IATACEIV: 'https://www.iata.org/en/training/courses/acc3-aviation-security-independent-validator/sec021veen02/en/',
     'LEX-300/2008': 'http://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:02008R0300-20100201&rid=1',
-    'LEX-748/2009': 'https://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:02009R0748-20230424&qid=1704304558475&from=EN',
+    'LEX-748/2009': 'https://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:32009R0748',
     'LEX-2015/1998': 'https://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:02015R1998-20250521&qid=1756652603281',
     '2020/910': 'https://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:32019R0103&from=FR',
     '2022/1174': 'https://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:32022R1174&from=FR',

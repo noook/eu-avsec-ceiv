@@ -83,11 +83,11 @@ useHead({
                 :href="$t('links.LEX-300/2008')">({{ $t('europeanCommission') }}) N° 300/2008 (M1.pdf)</a>
             </i18n-t>
             <i18n-t scope="global" keypath="linksRegulations.EURLEX.link2" tag="li">
-              <span>2023-03-23</span>
+              <span>2024-04-08</span>
               <a
                 target="_blank"
                 rel="noopener"
-                :href="$t('links.LEX-748/2009')">({{ $t('europeanCommission') }}) N° 748/2009 (M17.pdf)</a>
+                :href="$t('links.LEX-748/2009')">({{ $t('europeanCommission') }}) N° 748/2009 (M18.pdf)</a>
             </i18n-t>
             <i18n-t scope="global" keypath="linksRegulations.EURLEX.link3" tag="li">
               <span>2025-05-21</span>
