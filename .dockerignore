@@ -1,0 +1,10 @@
+node_modules
+.output
+dist
+.nuxt
+npm-debug.log
+pnpm-debug.log
+.git
+.gitignore
+.DS_Store
+
