@@ -57,7 +57,6 @@ export default {
     p4: {
       text: 'In order to assist you in this process, an international team of aviation security professionals and EU aviation security validators, decided to team up to provide you with their expertise, their resources and comprehensive consulting...',
     },
-    viewPresentation: 'View our ACC3 presentation',
     aviationSafetyEvolves: 'Aviation security change ahead',
     areYouReady: 'Are you ready ?',
     ourMission: 'Our mission',

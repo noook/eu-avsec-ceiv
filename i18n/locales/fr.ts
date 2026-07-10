@@ -57,7 +57,6 @@ export default {
     p4: {
       text: 'Afin de vous aider dans cette démarche, une équipe internationale de professionnels de la sûreté de l\'aviation civile et Validateurs EU de Sûreté Aérienne ont choisi de s\'unir pour mettre à votre disposition leur expertise, leurs ressources et leurs conseil...',
     },
-    viewPresentation: 'Voir notre présentation ACC3',
     aviationSafetyEvolves: 'La sûreté de l\'aviation évolue',
     areYouReady: 'Êtes-vous prêts ?',
     ourMission: 'Notre mission',

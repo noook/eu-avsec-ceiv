@@ -72,12 +72,6 @@ defineI18nRoute({
         <p class="text-lg text-right font-semibold tracking-wider">
           {{ $t('homepage.areYouReady') }}
         </p>
-        <figure>
-          <a target="_blank" rel="noopener" href="https://docs.google.com/a/eu-avsec-ceiv.org/viewer?a=v&pid=sites&srcid=ZXUtYXZzZWMtY2Vpdi5vcmd8ZXUtYXZzZWMtY2Vpdi1vcmd8Z3g6NTQwNjdlN2IwZmFhNTgyMg">
-            <span>{{ $t('homepage.viewPresentation') }}</span>
-            <img src="https://sites.google.com/a/eu-avsec-ceiv.org/eu-avsec-ceiv-org/_/rsrc/1381403981328/home/ACC3-RA3-KC3%20website%20pres%20176x99.jpg" alt="">
-          </a>
-        </figure>
       </section>
       <hr class="lg:hidden border-warm-gray-300">
       <section>
