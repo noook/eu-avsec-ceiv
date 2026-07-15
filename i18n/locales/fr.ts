@@ -30,7 +30,6 @@ export default {
     'LEX-300/2008': 'http://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:02008R0300-20100201&rid=1',
     'LEX-748/2009': 'https://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:32009R0748',
     '2026/449': 'https://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=OJ:L_202600449',
-    '2025/920': 'https://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=OJ:L_202500920',
   },
 
   homepage: {
@@ -190,7 +189,6 @@ export default {
     latestRegulations: {
       title: 'Les derniers Réglements d\'éxécution de la Commission:',
       link1: '{0} {1}',
-      link2: '{0} {1}',
     },
   },
 } as const

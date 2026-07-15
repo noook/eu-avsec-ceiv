@@ -105,13 +105,6 @@ useHead({
           <img src="@/assets/img/breaking-news.jpg" alt="latest news">
           <ul>
             <i18n-t scope="global" keypath="linksRegulations.latestRegulations.link1" tag="li">
-              <span>2025-05-19</span>
-              <a
-                target="_blank"
-                rel="noopener"
-                :href="$t('links.2025/920')">({{ $t('europeanUnion') }}) No 2025/920 M19.pdf</a>
-            </i18n-t>
-            <i18n-t scope="global" keypath="linksRegulations.latestRegulations.link2" tag="li">
               <span>2026-02-27</span>
               <a
                 target="_blank"

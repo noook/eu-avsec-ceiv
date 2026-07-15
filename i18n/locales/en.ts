@@ -30,7 +30,6 @@ export default {
     'LEX-300/2008': 'http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:02008R0300-20100201&qid=1395671571845&from=EN',
     'LEX-748/2009': 'https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32009R0748',
     '2026/449': 'https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202600449',
-    '2025/920': 'https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202500920',
   },
 
   homepage: {
@@ -190,7 +189,6 @@ export default {
     latestRegulations: {
       title: 'The latest Commission Implementing regulations:',
       link1: '{0} {1}',
-      link2: '{0} {1}',
     },
   },
 } as const
